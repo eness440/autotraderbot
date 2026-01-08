@@ -1,0 +1,709 @@
+
+===== [2025-12-12T18:46:59Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (46050, 180, 14), y shape: (46050,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (36840, 180, 14)
+[DEBUG] X_train Mean : 15988777984.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6745 | Val Acc: 0.566 | Val AUC: 0.602
+Ep 02 | Loss: 0.6685 | Val Acc: 0.581 | Val AUC: 0.622
+Ep 03 | Loss: 0.6467 | Val Acc: 0.608 | Val AUC: 0.667
+Ep 04 | Loss: 0.6196 | Val Acc: 0.635 | Val AUC: 0.701
+Ep 05 | Loss: 0.6028 | Val Acc: 0.650 | Val AUC: 0.721
+Ep 06 | Loss: 0.5915 | Val Acc: 0.668 | Val AUC: 0.739
+Ep 07 | Loss: 0.5794 | Val Acc: 0.682 | Val AUC: 0.754
+Ep 08 | Loss: 0.5697 | Val Acc: 0.682 | Val AUC: 0.760
+Ep 09 | Loss: 0.5586 | Val Acc: 0.697 | Val AUC: 0.775
+Ep 10 | Loss: 0.5492 | Val Acc: 0.704 | Val AUC: 0.786
+Ep 11 | Loss: 0.5333 | Val Acc: 0.720 | Val AUC: 0.800
+Ep 12 | Loss: 0.5212 | Val Acc: 0.727 | Val AUC: 0.807
+Ep 13 | Loss: 0.5079 | Val Acc: 0.736 | Val AUC: 0.816
+Ep 14 | Loss: 0.4946 | Val Acc: 0.749 | Val AUC: 0.830
+Ep 15 | Loss: 0.4799 | Val Acc: 0.754 | Val AUC: 0.836
+Ep 16 | Loss: 0.4696 | Val Acc: 0.758 | Val AUC: 0.843
+Ep 17 | Loss: 0.4549 | Val Acc: 0.768 | Val AUC: 0.849
+Ep 18 | Loss: 0.4420 | Val Acc: 0.773 | Val AUC: 0.853
+Ep 19 | Loss: 0.4333 | Val Acc: 0.779 | Val AUC: 0.860
+Ep 20 | Loss: 0.4164 | Val Acc: 0.786 | Val AUC: 0.868
+
+✅ EĞİTİM BİTTİ. Best Acc: 0.786 | Best AUC: 0.868
+Model: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\bilstm_best.pt
+
+===== [2025-12-12T19:19:21Z] END BiLSTM rc=0 timeout=False =====
+
+===== [2025-12-12T19:19:37Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (46050, 180, 14), y shape: (46050,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (36840, 180, 14)
+[DEBUG] X_train Mean : 15988777984.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6745 | Val Acc: 0.566 | Val AUC: 0.602
+Ep 02 | Loss: 0.6685 | Val Acc: 0.581 | Val AUC: 0.622
+Ep 03 | Loss: 0.6467 | Val Acc: 0.608 | Val AUC: 0.667
+Ep 04 | Loss: 0.6196 | Val Acc: 0.635 | Val AUC: 0.701
+Ep 05 | Loss: 0.6028 | Val Acc: 0.650 | Val AUC: 0.721
+Ep 06 | Loss: 0.5915 | Val Acc: 0.668 | Val AUC: 0.739
+Ep 07 | Loss: 0.5794 | Val Acc: 0.682 | Val AUC: 0.754
+Ep 08 | Loss: 0.5697 | Val Acc: 0.682 | Val AUC: 0.760
+Ep 09 | Loss: 0.5586 | Val Acc: 0.697 | Val AUC: 0.775
+Ep 10 | Loss: 0.5492 | Val Acc: 0.704 | Val AUC: 0.786
+Ep 11 | Loss: 0.5333 | Val Acc: 0.720 | Val AUC: 0.800
+Ep 12 | Loss: 0.5212 | Val Acc: 0.727 | Val AUC: 0.807
+Ep 13 | Loss: 0.5079 | Val Acc: 0.736 | Val AUC: 0.816
+Ep 14 | Loss: 0.4946 | Val Acc: 0.749 | Val AUC: 0.830
+Ep 15 | Loss: 0.4799 | Val Acc: 0.754 | Val AUC: 0.836
+Ep 16 | Loss: 0.4696 | Val Acc: 0.758 | Val AUC: 0.843
+Ep 17 | Loss: 0.4549 | Val Acc: 0.768 | Val AUC: 0.849
+Ep 18 | Loss: 0.4420 | Val Acc: 0.773 | Val AUC: 0.853
+Ep 19 | Loss: 0.4333 | Val Acc: 0.779 | Val AUC: 0.860
+Ep 20 | Loss: 0.4164 | Val Acc: 0.786 | Val AUC: 0.868
+
+✅ EĞİTİM BİTTİ. Best Acc: 0.786 | Best AUC: 0.868
+Model: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\bilstm_best.pt
+
+===== [2025-12-12T20:15:04Z] END BiLSTM rc=0 timeout=False =====
+
+===== [2025-12-12T21:02:33Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+
+===== [2025-12-12T22:02:35Z] END BiLSTM rc=1 timeout=True =====
+
+===== [2025-12-12T22:03:49Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+
+===== [2025-12-13T04:57:51Z] END BiLSTM rc=1 timeout=True =====
+
+===== [2025-12-20T05:33:42Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (42600, 180, 14), y shape: (42600,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (34080, 180, 14)
+[DEBUG] X_train Mean : 16555399168.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6669 | Val Acc: 0.611 | Val AUC: 0.667
+Ep 02 | Loss: 0.6320 | Val Acc: 0.633 | Val AUC: 0.703
+Ep 03 | Loss: 0.6110 | Val Acc: 0.650 | Val AUC: 0.720
+Ep 04 | Loss: 0.5963 | Val Acc: 0.663 | Val AUC: 0.742
+Ep 05 | Loss: 0.5805 | Val Acc: 0.680 | Val AUC: 0.754
+Ep 06 | Loss: 0.5674 | Val Acc: 0.695 | Val AUC: 0.768
+Ep 07 | Loss: 0.5517 | Val Acc: 0.704 | Val AUC: 0.785
+Ep 08 | Loss: 0.5402 | Val Acc: 0.710 | Val AUC: 0.795
+Ep 09 | Loss: 0.5268 | Val Acc: 0.728 | Val AUC: 0.806
+Ep 10 | Loss: 0.5153 | Val Acc: 0.728 | Val AUC: 0.808
+Ep 11 | Loss: 0.5029 | Val Acc: 0.738 | Val AUC: 0.820
+Ep 12 | Loss: 0.4913 | Val Acc: 0.741 | Val AUC: 0.822
+Ep 13 | Loss: 0.4820 | Val Acc: 0.749 | Val AUC: 0.832
+Ep 14 | Loss: 0.4696 | Val Acc: 0.756 | Val AUC: 0.839
+Ep 15 | Loss: 0.4591 | Val Acc: 0.762 | Val AUC: 0.848
+Ep 16 | Loss: 0.4507 | Val Acc: 0.760 | Val AUC: 0.848
+Ep 17 | Loss: 0.4434 | Val Acc: 0.772 | Val AUC: 0.859
+Ep 18 | Loss: 0.4291 | Val Acc: 0.774 | Val AUC: 0.858
+Ep 19 | Loss: 0.4178 | Val Acc: 0.783 | Val AUC: 0.865
+Ep 20 | Loss: 0.4072 | Val Acc: 0.790 | Val AUC: 0.872
+
+✅ EĞİTİM BİTTİ. Best Acc: 0.790 | Best AUC: 0.872
+Model: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\bilstm_best.pt
+
+===== [2025-12-20T05:58:42Z] END BiLSTM rc=0 timeout=False =====
+
+===== [2025-12-27T22:15:43Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (42104, 180, 14), y shape: (42104,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (33683, 180, 14)
+[DEBUG] X_train Mean : 16799472640.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6674 | Val Acc: 0.604 | Val AUC: 0.656
+Ep 02 | Loss: 0.6289 | Val Acc: 0.642 | Val AUC: 0.711
+Ep 03 | Loss: 0.6062 | Val Acc: 0.659 | Val AUC: 0.733
+Ep 04 | Loss: 0.5915 | Val Acc: 0.666 | Val AUC: 0.743
+Ep 05 | Loss: 0.5784 | Val Acc: 0.674 | Val AUC: 0.751
+Ep 06 | Loss: 0.5680 | Val Acc: 0.688 | Val AUC: 0.767
+Ep 07 | Loss: 0.5565 | Val Acc: 0.693 | Val AUC: 0.771
+Ep 08 | Loss: 0.5430 | Val Acc: 0.704 | Val AUC: 0.786
+Ep 09 | Loss: 0.5304 | Val Acc: 0.704 | Val AUC: 0.795
+Ep 10 | Loss: 0.5216 | Val Acc: 0.727 | Val AUC: 0.808
+Ep 11 | Loss: 0.5087 | Val Acc: 0.734 | Val AUC: 0.816
+Ep 12 | Loss: 0.4933 | Val Acc: 0.741 | Val AUC: 0.826
+Ep 13 | Loss: 0.4803 | Val Acc: 0.752 | Val AUC: 0.835
+Ep 14 | Loss: 0.4684 | Val Acc: 0.756 | Val AUC: 0.843
+Ep 15 | Loss: 0.4542 | Val Acc: 0.765 | Val AUC: 0.848
+Ep 16 | Loss: 0.4452 | Val Acc: 0.770 | Val AUC: 0.856
+Ep 17 | Loss: 0.4320 | Val Acc: 0.771 | Val AUC: 0.859
+Ep 18 | Loss: 0.4185 | Val Acc: 0.782 | Val AUC: 0.866
+Ep 19 | Loss: 0.4058 | Val Acc: 0.781 | Val AUC: 0.867
+Ep 20 | Loss: 0.3945 | Val Acc: 0.790 | Val AUC: 0.871
+
+✅ EĞİTİM BİTTİ. Best Acc: 0.790 | Best AUC: 0.871
+Model: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\bilstm_best.pt
+
+===== [2025-12-27T23:57:49Z] END BiLSTM rc=0 timeout=False =====
+
+===== [2025-12-28T13:14:28Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (41936, 180, 14), y shape: (41936,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (33548, 180, 14)
+[DEBUG] X_train Mean : 16757942272.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Traceback (most recent call last):
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 594, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 464, in main
+    loss.backward()
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_tensor.py", line 648, in backward
+    torch.autograd.backward(
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\autograd\__init__.py", line 353, in backward
+    _engine_run_backward(
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\autograd\graph.py", line 824, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+===== [2025-12-28T13:15:07Z] END BiLSTM rc=3221225786 timeout=False =====
+
+===== [2025-12-28T16:26:08Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (74070, 180, 14), y shape: (74070,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (59256, 180, 14)
+[DEBUG] X_train Mean : 9402749952.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6768 | Val Acc: 0.566 | Val AUC: 0.623
+Ep 02 | Loss: 0.6546 | Val Acc: 0.606 | Val AUC: 0.666
+Ep 03 | Loss: 0.6210 | Val Acc: 0.646 | Val AUC: 0.719
+Ep 04 | Loss: 0.6033 | Val Acc: 0.664 | Val AUC: 0.734
+Ep 05 | Loss: 0.5918 | Val Acc: 0.671 | Val AUC: 0.745
+Ep 06 | Loss: 0.5802 | Val Acc: 0.678 | Val AUC: 0.751
+Ep 07 | Loss: 0.5700 | Val Acc: 0.684 | Val AUC: 0.763
+Ep 08 | Loss: 0.5589 | Val Acc: 0.702 | Val AUC: 0.779
+Ep 09 | Loss: 0.5490 | Val Acc: 0.705 | Val AUC: 0.789
+Ep 10 | Loss: 0.5410 | Val Acc: 0.720 | Val AUC: 0.797
+Ep 11 | Loss: 0.5294 | Val Acc: 0.723 | Val AUC: 0.804
+Ep 12 | Loss: 0.5202 | Val Acc: 0.729 | Val AUC: 0.808
+Ep 13 | Loss: 0.5088 | Val Acc: 0.737 | Val AUC: 0.818
+Ep 14 | Loss: 0.4990 | Val Acc: 0.746 | Val AUC: 0.825
+Ep 15 | Loss: 0.4863 | Val Acc: 0.745 | Val AUC: 0.829
+Ep 16 | Loss: 0.4750 | Val Acc: 0.755 | Val AUC: 0.841
+Ep 17 | Loss: 0.4625 | Val Acc: 0.765 | Val AUC: 0.850
+Ep 18 | Loss: 0.4507 | Val Acc: 0.766 | Val AUC: 0.847
+Ep 19 | Loss: 0.4422 | Val Acc: 0.767 | Val AUC: 0.857
+Ep 20 | Loss: 0.4304 | Val Acc: 0.782 | Val AUC: 0.862
+
+✅ EĞİTİM BİTTİ. Best Acc: 0.782 | Best AUC: 0.862
+Model: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\bilstm_best.pt
+
+===== [2025-12-28T17:38:21Z] END BiLSTM rc=0 timeout=False =====
+
+===== [2025-12-28T18:52:25Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (43950, 180, 14), y shape: (43950,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (35160, 180, 14)
+[DEBUG] X_train Mean : 16080297984.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6716 | Val Acc: 0.577 | Val AUC: 0.618
+Ep 02 | Loss: 0.6596 | Val Acc: 0.625 | Val AUC: 0.677
+Ep 03 | Loss: 0.6202 | Val Acc: 0.648 | Val AUC: 0.719
+Ep 04 | Loss: 0.5981 | Val Acc: 0.657 | Val AUC: 0.733
+Ep 05 | Loss: 0.5858 | Val Acc: 0.668 | Val AUC: 0.748
+Ep 06 | Loss: 0.5759 | Val Acc: 0.674 | Val AUC: 0.753
+Ep 07 | Loss: 0.5678 | Val Acc: 0.682 | Val AUC: 0.765
+Ep 08 | Loss: 0.5580 | Val Acc: 0.685 | Val AUC: 0.772
+Ep 09 | Loss: 0.5500 | Val Acc: 0.695 | Val AUC: 0.781
+Ep 10 | Loss: 0.5385 | Val Acc: 0.703 | Val AUC: 0.790
+Traceback (most recent call last):
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 594, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 521, in main
+    logits = model(xb)
+             ^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 269, in forward
+    o, _ = self.gru(x)
+           ^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\rnn.py", line 1393, in forward
+    result = _VF.gru(
+             ^^^^^^^^
+KeyboardInterrupt
+
+===== [2025-12-28T19:10:28Z] END BiLSTM rc=3221225786 timeout=False =====
+
+===== [2025-12-28T20:02:53Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (44122, 180, 14), y shape: (44122,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (35297, 180, 14)
+[DEBUG] X_train Mean : 15913255936.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6701 | Val Acc: 0.572 | Val AUC: 0.628
+Traceback (most recent call last):
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 594, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 462, in main
+    logits = model(xb)
+             ^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 269, in forward
+    o, _ = self.gru(x)
+           ^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\rnn.py", line 1393, in forward
+    result = _VF.gru(
+             ^^^^^^^^
+KeyboardInterrupt
+
+===== [2025-12-28T20:06:59Z] END BiLSTM rc=3221225786 timeout=False =====
+
+===== [2025-12-28T20:09:33Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (44152, 180, 14), y shape: (44152,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (35321, 180, 14)
+[DEBUG] X_train Mean : 16066414592.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6762 | Val Acc: 0.536 | Val AUC: 0.572
+Traceback (most recent call last):
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 594, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 462, in main
+    logits = model(xb)
+             ^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 269, in forward
+    o, _ = self.gru(x)
+           ^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\rnn.py", line 1393, in forward
+    result = _VF.gru(
+             ^^^^^^^^
+KeyboardInterrupt
+
+===== [2025-12-28T20:13:36Z] END BiLSTM rc=3221225786 timeout=False =====
+
+===== [2026-01-04T21:00:46Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (42274, 180, 14), y shape: (42274,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (33819, 180, 14)
+[DEBUG] X_train Mean : 16370529280.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6740 | Val Acc: 0.550 | Val AUC: 0.577
+Ep 02 | Loss: 0.6731 | Val Acc: 0.557 | Val AUC: 0.591
+Traceback (most recent call last):
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 594, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 464, in main
+    loss.backward()
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_tensor.py", line 648, in backward
+    torch.autograd.backward(
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\autograd\__init__.py", line 353, in backward
+    _engine_run_backward(
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\autograd\graph.py", line 824, in _engine_run_backward
+KeyboardInterrupt
+
+===== [2026-01-04T21:10:39Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+
+===== [2026-01-04T21:13:12Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+
+===== [2026-01-07T11:01:32Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (42274, 180, 14), y shape: (42274,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (33819, 180, 14)
+[DEBUG] X_train Mean : 16370529280.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6740 | Val Acc: 0.550 | Val AUC: 0.577
+Ep 02 | Loss: 0.6731 | Val Acc: 0.557 | Val AUC: 0.591
+Ep 03 | Loss: 0.6578 | Val Acc: 0.559 | Val AUC: 0.589
+Ep 04 | Loss: 0.6527 | Val Acc: 0.567 | Val AUC: 0.617
+Ep 05 | Loss: 0.6406 | Val Acc: 0.604 | Val AUC: 0.681
+Ep 06 | Loss: 0.6183 | Val Acc: 0.637 | Val AUC: 0.709
+Traceback (most recent call last):
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 594, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 462, in main
+    logits = model(xb)
+             ^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 269, in forward
+    o, _ = self.gru(x)
+           ^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\rnn.py", line 1393, in forward
+    result = _VF.gru(
+             ^^^^^^^^
+KeyboardInterrupt
+
+===== [2026-01-07T13:34:15Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+
+===== [2026-01-07T14:34:00Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (42274, 180, 14), y shape: (42274,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (33819, 180, 14)
+[DEBUG] X_train Mean : 16370529280.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6740 | Val Acc: 0.550 | Val AUC: 0.577
+Ep 02 | Loss: 0.6731 | Val Acc: 0.557 | Val AUC: 0.591
+Ep 03 | Loss: 0.6578 | Val Acc: 0.559 | Val AUC: 0.589
+Ep 04 | Loss: 0.6527 | Val Acc: 0.567 | Val AUC: 0.617
+Ep 05 | Loss: 0.6406 | Val Acc: 0.604 | Val AUC: 0.681
+Ep 06 | Loss: 0.6183 | Val Acc: 0.637 | Val AUC: 0.709
+Ep 07 | Loss: 0.6086 | Val Acc: 0.648 | Val AUC: 0.717
+Ep 08 | Loss: 0.5994 | Val Acc: 0.654 | Val AUC: 0.725
+Ep 09 | Loss: 0.5932 | Val Acc: 0.650 | Val AUC: 0.730
+Ep 10 | Loss: 0.5855 | Val Acc: 0.657 | Val AUC: 0.740
+Ep 11 | Loss: 0.5806 | Val Acc: 0.679 | Val AUC: 0.754
+Ep 12 | Loss: 0.5670 | Val Acc: 0.682 | Val AUC: 0.761
+Ep 13 | Loss: 0.5588 | Val Acc: 0.694 | Val AUC: 0.778
+Ep 14 | Loss: 0.5491 | Val Acc: 0.690 | Val AUC: 0.783
+Ep 15 | Loss: 0.5446 | Val Acc: 0.702 | Val AUC: 0.795
+Ep 16 | Loss: 0.5279 | Val Acc: 0.724 | Val AUC: 0.805
+Ep 17 | Loss: 0.5157 | Val Acc: 0.720 | Val AUC: 0.800
+Ep 18 | Loss: 0.5063 | Val Acc: 0.728 | Val AUC: 0.814
+Ep 19 | Loss: 0.4925 | Val Acc: 0.723 | Val AUC: 0.817
+Ep 20 | Loss: 0.4829 | Val Acc: 0.748 | Val AUC: 0.834
+
+✅ EĞİTİM BİTTİ. Best Acc: 0.748 | Best AUC: 0.834
+Model: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\bilstm_best.pt
+
+===== [2026-01-07T15:24:27Z] END BiLSTM rc=0 timeout=False =====
+
+===== [2026-01-07T17:16:52Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (42274, 180, 14), y shape: (42274,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (33819, 180, 14)
+[DEBUG] X_train Mean : 16370529280.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6740 | Val Acc: 0.550 | Val AUC: 0.577
+Ep 02 | Loss: 0.6731 | Val Acc: 0.557 | Val AUC: 0.591
+Ep 03 | Loss: 0.6578 | Val Acc: 0.559 | Val AUC: 0.589
+Ep 04 | Loss: 0.6527 | Val Acc: 0.567 | Val AUC: 0.617
+Ep 05 | Loss: 0.6406 | Val Acc: 0.604 | Val AUC: 0.681
+Ep 06 | Loss: 0.6183 | Val Acc: 0.637 | Val AUC: 0.709
+Ep 07 | Loss: 0.6086 | Val Acc: 0.648 | Val AUC: 0.717
+Ep 08 | Loss: 0.5994 | Val Acc: 0.654 | Val AUC: 0.725
+Ep 09 | Loss: 0.5932 | Val Acc: 0.650 | Val AUC: 0.730
+Ep 10 | Loss: 0.5855 | Val Acc: 0.657 | Val AUC: 0.740
+Ep 11 | Loss: 0.5806 | Val Acc: 0.679 | Val AUC: 0.754
+Ep 12 | Loss: 0.5670 | Val Acc: 0.682 | Val AUC: 0.761
+Ep 13 | Loss: 0.5588 | Val Acc: 0.694 | Val AUC: 0.778
+Ep 14 | Loss: 0.5491 | Val Acc: 0.690 | Val AUC: 0.783
+Ep 15 | Loss: 0.5446 | Val Acc: 0.702 | Val AUC: 0.795
+Ep 16 | Loss: 0.5279 | Val Acc: 0.724 | Val AUC: 0.805
+Ep 17 | Loss: 0.5157 | Val Acc: 0.720 | Val AUC: 0.800
+Ep 18 | Loss: 0.5063 | Val Acc: 0.728 | Val AUC: 0.814
+Ep 19 | Loss: 0.4925 | Val Acc: 0.723 | Val AUC: 0.817
+Ep 20 | Loss: 0.4829 | Val Acc: 0.748 | Val AUC: 0.834
+
+✅ EĞİTİM BİTTİ. Best Acc: 0.748 | Best AUC: 0.834
+Model: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\bilstm_best.pt
+
+===== [2026-01-07T18:27:48Z] END BiLSTM rc=0 timeout=False =====
+
+===== [2026-01-08T12:25:20Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (42274, 180, 14), y shape: (42274,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (33819, 180, 14)
+[DEBUG] X_train Mean : 16370529280.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6740 | Val Acc: 0.550 | Val AUC: 0.577
+Ep 02 | Loss: 0.6731 | Val Acc: 0.557 | Val AUC: 0.591
+Ep 03 | Loss: 0.6578 | Val Acc: 0.559 | Val AUC: 0.589
+Ep 04 | Loss: 0.6527 | Val Acc: 0.567 | Val AUC: 0.617
+Ep 05 | Loss: 0.6406 | Val Acc: 0.604 | Val AUC: 0.681
+Ep 06 | Loss: 0.6183 | Val Acc: 0.637 | Val AUC: 0.709
+Ep 07 | Loss: 0.6086 | Val Acc: 0.648 | Val AUC: 0.717
+Ep 08 | Loss: 0.5994 | Val Acc: 0.654 | Val AUC: 0.725
+Ep 09 | Loss: 0.5932 | Val Acc: 0.650 | Val AUC: 0.730
+Traceback (most recent call last):
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 594, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py", line 464, in main
+    loss.backward()
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_tensor.py", line 648, in backward
+    torch.autograd.backward(
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\autograd\__init__.py", line 353, in backward
+    _engine_run_backward(
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\autograd\graph.py", line 824, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+===== [2026-01-08T14:30:16Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (42274, 180, 14), y shape: (42274,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (33819, 180, 14)
+[DEBUG] X_train Mean : 16370529280.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6740 | Val Acc: 0.550 | Val AUC: 0.577
+Ep 02 | Loss: 0.6731 | Val Acc: 0.557 | Val AUC: 0.591
+Ep 03 | Loss: 0.6578 | Val Acc: 0.559 | Val AUC: 0.589
+Ep 04 | Loss: 0.6527 | Val Acc: 0.567 | Val AUC: 0.617
+Ep 05 | Loss: 0.6406 | Val Acc: 0.604 | Val AUC: 0.681
+Ep 06 | Loss: 0.6183 | Val Acc: 0.637 | Val AUC: 0.709
+Ep 07 | Loss: 0.6086 | Val Acc: 0.648 | Val AUC: 0.717
+Ep 08 | Loss: 0.5994 | Val Acc: 0.654 | Val AUC: 0.725
+Ep 09 | Loss: 0.5932 | Val Acc: 0.650 | Val AUC: 0.730
+Ep 10 | Loss: 0.5855 | Val Acc: 0.657 | Val AUC: 0.740
+Ep 11 | Loss: 0.5806 | Val Acc: 0.679 | Val AUC: 0.754
+Ep 12 | Loss: 0.5670 | Val Acc: 0.682 | Val AUC: 0.761
+Ep 13 | Loss: 0.5588 | Val Acc: 0.694 | Val AUC: 0.778
+Ep 14 | Loss: 0.5491 | Val Acc: 0.690 | Val AUC: 0.783
+Ep 15 | Loss: 0.5446 | Val Acc: 0.702 | Val AUC: 0.795
+Ep 16 | Loss: 0.5279 | Val Acc: 0.724 | Val AUC: 0.805
+Ep 17 | Loss: 0.5157 | Val Acc: 0.720 | Val AUC: 0.800
+Ep 18 | Loss: 0.5063 | Val Acc: 0.728 | Val AUC: 0.814
+Ep 19 | Loss: 0.4925 | Val Acc: 0.723 | Val AUC: 0.817
+Ep 20 | Loss: 0.4829 | Val Acc: 0.748 | Val AUC: 0.834
+
+✅ EĞİTİM BİTTİ. Best Acc: 0.748 | Best AUC: 0.834
+Model: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\bilstm_best.pt
+
+===== [2026-01-08T15:38:42Z] END BiLSTM rc=0 timeout=False =====
+
+===== [2026-01-08T15:48:09Z] START BiLSTM =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\bilstm_train.py --data supervised_w180_h12_g0.parquet --epochs 20
+
+[INFO] torch.set_num_threads(11)
+[INFO] NPZ bulundu, buradan yüklenecek: supervised_w180_h12_g0.npz
+[INFO] NPZ X shape: (42274, 180, 14), y shape: (42274,)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DEBUG] X_train Shape: (33819, 180, 14)
+[DEBUG] X_train Mean : 16370529280.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[INFO] Scaling...
+[INFO] Device: cpu
+
+🚀 EĞİTİM BAŞLIYOR...
+
+Ep 01 | Loss: 0.6740 | Val Acc: 0.550 | Val AUC: 0.577
+Ep 02 | Loss: 0.6731 | Val Acc: 0.557 | Val AUC: 0.591
+Ep 03 | Loss: 0.6578 | Val Acc: 0.559 | Val AUC: 0.589
+Ep 04 | Loss: 0.6527 | Val Acc: 0.567 | Val AUC: 0.617
+Ep 05 | Loss: 0.6406 | Val Acc: 0.604 | Val AUC: 0.681
+Ep 06 | Loss: 0.6183 | Val Acc: 0.637 | Val AUC: 0.709
+Ep 07 | Loss: 0.6086 | Val Acc: 0.648 | Val AUC: 0.717
+Ep 08 | Loss: 0.5994 | Val Acc: 0.654 | Val AUC: 0.725
+Ep 09 | Loss: 0.5932 | Val Acc: 0.650 | Val AUC: 0.730
+Ep 10 | Loss: 0.5855 | Val Acc: 0.657 | Val AUC: 0.740
+Ep 11 | Loss: 0.5806 | Val Acc: 0.679 | Val AUC: 0.754
+Ep 12 | Loss: 0.5670 | Val Acc: 0.682 | Val AUC: 0.761
+Ep 13 | Loss: 0.5588 | Val Acc: 0.694 | Val AUC: 0.778
+Ep 14 | Loss: 0.5491 | Val Acc: 0.690 | Val AUC: 0.783
+Ep 15 | Loss: 0.5446 | Val Acc: 0.702 | Val AUC: 0.795
+Ep 16 | Loss: 0.5279 | Val Acc: 0.724 | Val AUC: 0.805
+Ep 17 | Loss: 0.5157 | Val Acc: 0.720 | Val AUC: 0.800
+Ep 18 | Loss: 0.5063 | Val Acc: 0.728 | Val AUC: 0.814
+Ep 19 | Loss: 0.4925 | Val Acc: 0.723 | Val AUC: 0.817
+Ep 20 | Loss: 0.4829 | Val Acc: 0.748 | Val AUC: 0.834
+
+✅ EĞİTİM BİTTİ. Best Acc: 0.748 | Best AUC: 0.834
+Model: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\bilstm_best.pt
+
+===== [2026-01-08T16:30:03Z] END BiLSTM rc=0 timeout=False =====

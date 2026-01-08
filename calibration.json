@@ -1,0 +1,16 @@
+{
+  "type": "logistic",
+  "a": 3.0,
+  "b": 0.0,
+  "_comment": "Logistic calibration parameters: calibrated = 1 / (1 + exp(-a * (raw - 0.5) + b))",
+  "_changelog": [
+    "v1.0: Initial a=5.0, b=0.0",
+    "v1.1: Reduced a from 5.0 to 3.0 for smoother probability transitions",
+    "v1.2: Added documentation and validation ranges"
+  ],
+  "_valid_ranges": {
+    "a": {"min": 1.0, "max": 10.0, "recommended": 3.0},
+    "b": {"min": -2.0, "max": 2.0, "recommended": 0.0}
+  },
+  "_description": "Controls how raw confidence scores are transformed into calibrated probabilities. Higher 'a' values create sharper transitions (more aggressive), lower values create smoother transitions (more conservative). The value b shifts the midpoint."
+}

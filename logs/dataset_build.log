@@ -1,0 +1,704 @@
+[2025-11-19 17:16:45] ==== Dataset Builder Başlatıldı ====
+[2025-11-19 17:16:45] Ayarlar: Window=180, Horizon=12, Gap=0, Threshold=0.003
+[2025-11-19 17:16:47] Coin Filtresi: 67 sembolden 67 tanesi seçildi (Hedef Liste).
+[2025-11-19 17:16:47] Yüklenen veri: 67 sembol, 134000 toplam satır (limit=2000/coin)
+[2025-11-19 17:16:48] [MULTI] Birleştirilmiş dataframe: (94499, 12)
+[2025-11-19 17:16:49] [OK] 1INCHUSDT: 1375 satırdan 904 örnek üretildi. (nötr atlandı: 279)
+[2025-11-19 17:16:49] [OK] AAVEUSDT: 1376 satırdan 877 örnek üretildi. (nötr atlandı: 307)
+[2025-11-19 17:16:49] [OK] ADAUSDT: 1376 satırdan 823 örnek üretildi. (nötr atlandı: 361)
+[2025-11-19 17:16:50] [OK] ALGOUSDT: 1375 satırdan 856 örnek üretildi. (nötr atlandı: 327)
+[2025-11-19 17:16:50] [OK] APTUSDT: 1376 satırdan 846 örnek üretildi. (nötr atlandı: 338)
+[2025-11-19 17:16:50] [OK] ARBUSDT: 1376 satırdan 879 örnek üretildi. (nötr atlandı: 305)
+[2025-11-19 17:16:50] [OK] AVAXUSDT: 1376 satırdan 833 örnek üretildi. (nötr atlandı: 351)
+[2025-11-19 17:16:51] [OK] AXSUSDT: 1376 satırdan 925 örnek üretildi. (nötr atlandı: 259)
+[2025-11-19 17:16:51] [OK] BANDUSDT: 1375 satırdan 815 örnek üretildi. (nötr atlandı: 368)
+[2025-11-19 17:16:51] [OK] BIGTIMEUSDT: 1376 satırdan 837 örnek üretildi. (nötr atlandı: 347)
+[2025-11-19 17:16:52] [OK] BNBUSDT: 1376 satırdan 706 örnek üretildi. (nötr atlandı: 478)
+[2025-11-19 17:16:52] [OK] BTCUSDT: 1376 satırdan 570 örnek üretildi. (nötr atlandı: 614)
+[2025-11-19 17:16:52] [OK] CELOUSDT: 1375 satırdan 842 örnek üretildi. (nötr atlandı: 341)
+[2025-11-19 17:16:52] [OK] CELRUSDT: 1375 satırdan 496 örnek üretildi. (nötr atlandı: 687)
+[2025-11-19 17:16:53] [OK] CHZUSDT: 1389 satırdan 740 örnek üretildi. (nötr atlandı: 457)
+[2025-11-19 17:16:53] [OK] COMPUSDT: 1375 satırdan 818 örnek üretildi. (nötr atlandı: 365)
+[2025-11-19 17:16:53] [OK] CRVUSDT: 1375 satırdan 891 örnek üretildi. (nötr atlandı: 292)
+[2025-11-19 17:16:54] [OK] DOGEUSDT: 1376 satırdan 769 örnek üretildi. (nötr atlandı: 415)
+[2025-11-19 17:16:54] [OK] DOTUSDT: 1376 satırdan 837 örnek üretildi. (nötr atlandı: 347)
+[2025-11-19 17:16:54] [OK] EGLDUSDT: 1391 satırdan 623 örnek üretildi. (nötr atlandı: 576)
+[2025-11-19 17:16:54] [OK] ENJUSDT: 1375 satırdan 806 örnek üretildi. (nötr atlandı: 377)
+[2025-11-19 17:16:55] [OK] ETCUSDT: 1375 satırdan 788 örnek üretildi. (nötr atlandı: 395)
+[2025-11-19 17:16:55] [OK] ETHUSDT: 1376 satırdan 788 örnek üretildi. (nötr atlandı: 396)
+[2025-11-19 17:16:55] [OK] FILUSDT: 1376 satırdan 947 örnek üretildi. (nötr atlandı: 237)
+[2025-11-19 17:16:55] [OK] FLOKIUSDT: 1376 satırdan 853 örnek üretildi. (nötr atlandı: 331)
+[2025-11-19 17:16:56] [OK] GALAUSDT: 1391 satırdan 859 örnek üretildi. (nötr atlandı: 340)
+[2025-11-19 17:16:56] [OK] GMTUSDT: 1376 satırdan 866 örnek üretildi. (nötr atlandı: 318)
+[2025-11-19 17:16:57] [OK] GMXUSDT: 1375 satırdan 722 örnek üretildi. (nötr atlandı: 461)
+[2025-11-19 17:16:57] [OK] HBARUSDT: 1375 satırdan 881 örnek üretildi. (nötr atlandı: 302)
+[2025-11-19 17:16:57] [OK] ICXUSDT: 1375 satırdan 189 örnek üretildi. (nötr atlandı: 994)
+[2025-11-19 17:16:57] [OK] IMXUSDT: 1376 satırdan 924 örnek üretildi. (nötr atlandı: 260)
+[2025-11-19 17:16:57] [OK] INJUSDT: 1376 satırdan 931 örnek üretildi. (nötr atlandı: 253)
+[2025-11-19 17:16:58] [OK] JUPUSDT: 1390 satırdan 939 örnek üretildi. (nötr atlandı: 259)
+[2025-11-19 17:16:59] [OK] LDOUSDT: 1376 satırdan 894 örnek üretildi. (nötr atlandı: 290)
+[2025-11-19 17:16:59] [OK] LINKUSDT: 1376 satırdan 835 örnek üretildi. (nötr atlandı: 349)
+[2025-11-19 17:16:59] [OK] LTCUSDT: 1376 satırdan 818 örnek üretildi. (nötr atlandı: 366)
+[2025-11-19 17:16:59] [OK] LUNAUSDT: 1375 satırdan 646 örnek üretildi. (nötr atlandı: 537)
+[2025-11-19 17:16:59] [OK] MAGICUSDT: 1375 satırdan 837 örnek üretildi. (nötr atlandı: 346)
+[2025-11-19 17:16:59] [OK] MATICUSDT: 1376 satırdan 103 örnek üretildi. (nötr atlandı: 1081)
+[2025-11-19 17:17:00] [OK] MINAUSDT: 1375 satırdan 941 örnek üretildi. (nötr atlandı: 242)
+[2025-11-19 17:17:00] [OK] NEARUSDT: 1376 satırdan 919 örnek üretildi. (nötr atlandı: 265)
+[2025-11-19 17:17:00] [OK] OPUSDT: 1376 satırdan 906 örnek üretildi. (nötr atlandı: 278)
+[2025-11-19 17:17:01] [OK] PEPEUSDT: 1376 satırdan 832 örnek üretildi. (nötr atlandı: 352)
+[2025-11-19 17:17:02] [OK] POLUSDT: 1376 satırdan 764 örnek üretildi. (nötr atlandı: 420)
+[2025-11-19 17:17:02] [OK] PYTHUSDT: 1390 satırdan 890 örnek üretildi. (nötr atlandı: 308)
+[2025-11-19 17:17:02] [OK] RSRUSDT: 1376 satırdan 668 örnek üretildi. (nötr atlandı: 516)
+[2025-11-19 17:17:02] [OK] SANDUSDT: 1376 satırdan 711 örnek üretildi. (nötr atlandı: 473)
+[2025-11-19 17:17:02] [OK] SATSUSDT: 1376 satırdan 1184 örnek üretildi. (nötr atlandı: 0)
+[2025-11-19 17:17:03] [OK] SHIBUSDT: 1376 satırdan 736 örnek üretildi. (nötr atlandı: 448)
+[2025-11-19 17:17:03] [OK] SKLUSDT: 1376 satırdan 721 örnek üretildi. (nötr atlandı: 463)
+[2025-11-19 17:17:03] [OK] SOLUSDT: 1376 satırdan 803 örnek üretildi. (nötr atlandı: 381)
+[2025-11-19 17:17:03] [OK] STXUSDT: 1390 satırdan 866 örnek üretildi. (nötr atlandı: 332)
+[2025-11-19 17:17:05] [OK] SUIUSDT: 1376 satırdan 814 örnek üretildi. (nötr atlandı: 370)
+[2025-11-19 17:17:05] [OK] THETAUSDT: 1375 satırdan 898 örnek üretildi. (nötr atlandı: 285)
+[2025-11-19 17:17:05] [OK] TONUSDT: 1391 satırdan 815 örnek üretildi. (nötr atlandı: 384)
+[2025-11-19 17:17:05] [OK] TRXUSDT: 1376 satırdan 387 örnek üretildi. (nötr atlandı: 797)
+[2025-11-19 17:17:05] [OK] UNIUSDT: 1376 satırdan 967 örnek üretildi. (nötr atlandı: 217)
+[2025-11-19 17:17:06] [OK] WIFUSDT: 1376 satırdan 887 örnek üretildi. (nötr atlandı: 297)
+[2025-11-19 17:17:06] [OK] WLDUSDT: 1375 satırdan 857 örnek üretildi. (nötr atlandı: 326)
+[2025-11-19 17:17:06] [OK] XLMUSDT: 1375 satırdan 781 örnek üretildi. (nötr atlandı: 402)
+[2025-11-19 17:17:06] [OK] XRPUSDT: 1376 satırdan 816 örnek üretildi. (nötr atlandı: 368)
+[2025-11-19 17:17:06] [OK] YGGUSDT: 1376 satırdan 864 örnek üretildi. (nötr atlandı: 320)
+[2025-11-19 17:17:06] [OK] ZILUSDT: 1375 satırdan 829 örnek üretildi. (nötr atlandı: 354)
+[2025-11-19 17:17:06] Dengeleme öncesi: {0: 27082, 1: 23287} | Nötr atlanan toplam: 29055
+[2025-11-19 17:17:06] Label dağılımı (Dengelendi): {0: 0.5, 1: 0.5} | Örnek/Sınıf: 23287
+[2025-11-19 17:17:07] [MULTI] OHLC + Feature verisi kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\merged_multi_ohlc.parquet
+[2025-11-19 17:17:23] OK -> C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | rows: 46574
+[2025-11-19 17:17:23] Ortalama örnek sayısı / coin: 695
+[2025-11-19 17:17:23] ==== Dataset Builder Tamamlandı ====
+[2025-11-19 17:17:23] Not: BiLSTM eğitimi için önerilen epoch=50
+[2025-11-19 17:17:23] ==== Eğitim Aşaması Başlıyor (RL → BiLSTM) ====
+[2025-11-19 17:17:23] ℹ️ Uyarı: RL eğitimi için uyumlu script bulunamadı (veya çalıştırma başarısız). Adaylar: rl_train.py, rl_trainer.py, train_rl.py, training_loop_rl.py
+[2025-11-19 17:17:23] ℹ️ Uyarı: BiLSTM eğitimi için uyumlu script bulunamadı (veya çalıştırma başarısız). Adaylar: bilstm_train.py, bilstm_trainer.py, train_lstm.py, ml/train_lstm.py
+[2025-11-19 17:17:23] ==== Eğitim Aşaması Atlandı (uygun script bulunamadı) ====
+[2025-11-19 18:18:56] ==== Dataset Builder Başlatıldı ====
+[2025-11-19 18:18:58] Coin Filtresi: 67 sembolden 67 tanesi seçildi.
+[2025-11-19 18:18:58] Yüklenen veri: 67 sembol, 134000 satır.
+[2025-11-19 18:19:29] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır Sayısı: 47594
+[2025-11-19 18:19:29] ▶️ Çalıştırılıyor: bilstm_train.py
+[2025-11-19 18:19:50] ✅ Tamamlandı: bilstm_train.py
+[2025-11-19 18:19:50] ▶️ Çalıştırılıyor: rl_train.py
+[2025-11-19 18:49:07] ==== Dataset Builder (Fix) ====
+[2025-11-19 18:49:12] Yüklenen: 67 sembol, 134000 satır.
+[2025-11-19 18:49:48] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 47594
+[2025-11-19 19:10:24] ==== Dataset Builder (Fix) ====
+[2025-11-19 19:10:26] Yüklenen: 67 sembol, 134000 satır.
+[2025-11-19 19:10:27] Feature DF: 67 sembol, 93226 satır.
+[2025-11-19 19:10:42] Supervised ham satır sayısı: 50962 | class distribution: {0: 27165, 1: 23797}
+[2025-11-19 19:10:42] Undersample sonrası satır sayısı: 47594 | dağılım: {0: 23797, 1: 23797}
+[2025-11-19 19:10:59] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 47594
+[2025-11-19 19:19:51] ==== Dataset Builder (Fix) ====
+[2025-11-19 19:19:53] Yüklenen: 67 sembol, 134000 satır.
+[2025-11-19 19:19:55] Feature DF: 67 sembol, 93226 satır.
+[2025-11-19 19:20:09] Supervised ham satır sayısı: 50962 | class distribution: {0: 27165, 1: 23797}
+[2025-11-19 19:20:09] Undersample sonrası satır sayısı: 47594 | dağılım: {0: 23797, 1: 23797}
+[2025-11-19 19:20:25] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 47594
+[2025-11-19 19:21:17] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (47594, 180, 14), y shape: (47594,)
+[2025-11-20 03:58:24] ==== Dataset Builder (Fix) ====
+[2025-11-20 03:58:27] Yüklenen: 39 sembol, 78000 satır.
+[2025-11-20 03:58:28] Feature DF: 39 sembol, 54290 satır.
+[2025-11-20 03:58:41] Supervised ham satır sayısı: 29195 | class distribution: {0: 16012, 1: 13183}
+[2025-11-20 03:58:41] Undersample sonrası satır sayısı: 26366 | dağılım: {0: 13183, 1: 13183}
+[2025-11-20 03:58:55] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 26366
+[2025-11-20 03:59:27] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (26366, 180, 14), y shape: (26366,)
+[2025-11-20 15:59:45] ==== Dataset Builder (Fix) ====
+[2025-11-20 15:59:48] Yüklenen: 39 sembol, 78000 satır.
+[2025-11-20 15:59:49] Feature DF: 39 sembol, 54293 satır.
+[2025-11-20 16:00:03] Supervised ham satır sayısı: 28862 | class distribution: {0: 15343, 1: 13519}
+[2025-11-20 16:00:03] Undersample sonrası satır sayısı: 27038 | dağılım: {1: 13519, 0: 13519}
+[2025-11-20 16:00:18] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 27038
+[2025-11-20 16:00:50] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (27038, 180, 14), y shape: (27038,)
+[2025-11-21 04:13:17] ==== Dataset Builder (Fix) ====
+[2025-11-21 04:13:19] Yüklenen: 39 sembol, 78000 satır.
+[2025-11-21 04:13:19] Feature DF: 39 sembol, 54289 satır.
+[2025-11-21 04:13:27] Supervised ham satır sayısı: 29531 | class distribution: {0: 15158, 1: 14373}
+[2025-11-21 04:13:27] Undersample sonrası satır sayısı: 28746 | dağılım: {1: 14373, 0: 14373}
+[2025-11-21 04:13:36] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 28746
+[2025-11-21 04:13:57] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (28746, 180, 14), y shape: (28746,)
+[2025-11-21 16:14:07] ==== Dataset Builder (Fix) ====
+[2025-11-21 16:14:09] Yüklenen: 39 sembol, 78000 satır.
+[2025-11-21 16:14:10] Feature DF: 39 sembol, 54291 satır.
+[2025-11-21 16:14:23] Supervised ham satır sayısı: 30127 | class distribution: {0: 16683, 1: 13444}
+[2025-11-21 16:14:23] Undersample sonrası satır sayısı: 26888 | dağılım: {1: 13444, 0: 13444}
+[2025-11-21 16:14:38] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 26888
+[2025-11-21 16:15:11] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (26888, 180, 14), y shape: (26888,)
+[2025-11-27 15:11:14] ==== Dataset Builder (Fix) ====
+[2025-11-27 15:11:14] Yüklenen: 45 sembol, 82 satır.
+[2025-11-27 15:11:14] HATA: Hiç feature oluşturulamadı.
+[2025-11-27 20:38:23] ==== Dataset Builder (Fix) ====
+[2025-11-27 20:38:24] Yüklenen: 40 sembol, 78027 satır.
+[2025-11-27 20:38:24] Feature DF: 39 sembol, 54346 satır.
+[2025-11-27 20:38:29] Supervised ham satır sayısı: 18201 | class distribution: {0: 9598, 1: 8603}
+[2025-11-27 20:38:29] Undersample sonrası satır sayısı: 17206 | dağılım: {1: 8603, 0: 8603}
+[2025-11-27 20:38:34] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 17206
+[2025-11-27 20:38:45] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (17206, 180, 14), y shape: (17206,)
+[2025-11-27 21:14:26] ==== Dataset Builder (Fix) ====
+[2025-11-27 21:14:27] Yüklenen: 39 sembol, 78000 satır.
+[2025-11-27 21:14:28] Feature DF: 39 sembol, 54346 satır.
+[2025-11-27 21:14:32] Supervised ham satır sayısı: 18201 | class distribution: {0: 9598, 1: 8603}
+[2025-11-27 21:14:32] Undersample sonrası satır sayısı: 17206 | dağılım: {1: 8603, 0: 8603}
+[2025-11-27 21:14:36] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 17206
+[2025-11-27 21:14:47] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (17206, 180, 14), y shape: (17206,)
+[2025-11-27 22:09:38] ==== Dataset Builder (Fix) ====
+[2025-11-27 22:09:39] Yüklenen: 39 sembol, 78000 satır.
+[2025-11-27 22:09:40] Feature DF: 39 sembol, 54346 satır.
+[2025-11-27 22:09:44] Supervised ham satır sayısı: 18201 | class distribution: {0: 9598, 1: 8603}
+[2025-11-27 22:09:44] Undersample sonrası satır sayısı: 17206 | dağılım: {1: 8603, 0: 8603}
+[2025-11-27 22:09:48] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 17206
+[2025-11-27 22:09:59] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (17206, 180, 14), y shape: (17206,)
+[2025-11-28 23:50:47] ==== Dataset Builder (Fix) ====
+[2025-11-28 23:50:47] Yüklenen: 46 sembol, 46 satır.
+[2025-11-28 23:50:47] HATA: Hiç feature oluşturulamadı.
+[2025-11-29 23:51:46] ==== Dataset Builder (Fix) ====
+[2025-11-29 23:51:48] Yüklenen: 39 sembol, 78000 satır.
+[2025-11-29 23:51:49] Feature DF: 39 sembol, 54326 satır.
+[2025-11-29 23:51:53] Supervised ham satır sayısı: 16929 | class distribution: {0: 9267, 1: 7662}
+[2025-11-29 23:51:53] Undersample sonrası satır sayısı: 15324 | dağılım: {1: 7662, 0: 7662}
+[2025-11-29 23:52:00] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 15324
+[2025-11-29 23:52:12] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (15324, 180, 14), y shape: (15324,)
+[2025-11-30 02:20:51] ==== Dataset Builder (Fix) ====
+[2025-11-30 02:20:52] Yüklenen: 40 sembol, 78394 satır.
+[2025-11-30 02:20:53] Feature DF: 40 sembol, 54697 satır.
+[2025-11-30 02:20:58] Supervised ham satır sayısı: 18712 | class distribution: {0: 10391, 1: 8321}
+[2025-11-30 02:20:58] Undersample sonrası satır sayısı: 16642 | dağılım: {0: 8321, 1: 8321}
+[2025-11-30 02:21:07] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 16642
+[2025-11-30 02:21:35] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (16642, 180, 14), y shape: (16642,)
+[2025-11-30 02:48:40] ==== Dataset Builder (Fix) ====
+[2025-11-30 02:48:42] Yüklenen: 40 sembol, 78348 satır.
+[2025-11-30 02:48:43] Feature DF: 40 sembol, 54651 satır.
+[2025-11-30 10:46:52] ==== Dataset Builder (Fix) ====
+[2025-11-30 10:46:54] Yüklenen: 39 sembol, 78000 satır.
+[2025-11-30 10:46:55] Feature DF: 39 sembol, 54322 satır.
+[2025-11-30 10:46:59] Supervised ham satır sayısı: 18534 | class distribution: {0: 10293, 1: 8241}
+[2025-11-30 10:46:59] Undersample sonrası satır sayısı: 16482 | dağılım: {1: 8241, 0: 8241}
+[2025-11-30 10:47:03] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 16482
+[2025-11-30 10:47:13] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (16482, 180, 14), y shape: (16482,)
+[2025-11-30 22:47:29] ==== Dataset Builder (Fix) ====
+[2025-11-30 22:47:31] Yüklenen: 40 sembol, 80000 satır.
+[2025-11-30 22:47:33] Feature DF: 40 sembol, 56440 satır.
+[2025-11-30 22:47:41] Supervised ham satır sayısı: 20686 | class distribution: {0: 11500, 1: 9186}
+[2025-11-30 22:47:41] Undersample sonrası satır sayısı: 18372 | dağılım: {1: 9186, 0: 9186}
+[2025-11-30 22:47:50] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 18372
+[2025-11-30 22:48:11] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (18372, 180, 14), y shape: (18372,)
+[2025-12-01 09:51:51] ==== Dataset Builder (Fix) ====
+[2025-12-01 09:51:52] Yüklenen: 40 sembol, 80000 satır.
+[2025-12-01 09:51:53] Feature DF: 40 sembol, 56428 satır.
+[2025-12-01 09:51:58] Supervised ham satır sayısı: 22700 | class distribution: {0: 12552, 1: 10148}
+[2025-12-01 09:51:58] Undersample sonrası satır sayısı: 20296 | dağılım: {1: 10148, 0: 10148}
+[2025-12-01 09:52:04] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 20296
+[2025-12-01 09:52:22] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (20296, 180, 14), y shape: (20296,)
+[2025-12-01 09:57:05] ==== Dataset Builder (Fix) ====
+[2025-12-01 09:57:06] Yüklenen: 40 sembol, 80000 satır.
+[2025-12-01 09:57:07] Feature DF: 40 sembol, 56428 satır.
+[2025-12-01 09:57:12] Supervised ham satır sayısı: 22700 | class distribution: {0: 12552, 1: 10148}
+[2025-12-01 09:57:12] Undersample sonrası satır sayısı: 20296 | dağılım: {1: 10148, 0: 10148}
+[2025-12-01 09:57:17] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 20296
+[2025-12-01 09:57:32] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (20296, 180, 14), y shape: (20296,)
+[2025-12-01 10:03:47] ==== Dataset Builder (Fix) ====
+[2025-12-01 10:03:48] Yüklenen: 40 sembol, 80000 satır.
+[2025-12-01 10:03:49] Feature DF: 40 sembol, 56428 satır.
+[2025-12-01 10:03:54] Supervised ham satır sayısı: 22700 | class distribution: {0: 12552, 1: 10148}
+[2025-12-01 10:03:54] Undersample sonrası satır sayısı: 20296 | dağılım: {1: 10148, 0: 10148}
+[2025-12-01 10:04:05] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 20296
+[2025-12-01 10:04:28] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (20296, 180, 14), y shape: (20296,)
+[2025-12-01 10:36:53] ==== Dataset Builder (Fix) ====
+[2025-12-01 10:36:54] Yüklenen: 40 sembol, 80000 satır.
+[2025-12-01 10:36:54] Feature DF: 40 sembol, 56433 satır.
+[2025-12-01 10:37:00] Supervised ham satır sayısı: 22700 | class distribution: {0: 12552, 1: 10148}
+[2025-12-01 10:37:00] Undersample sonrası satır sayısı: 20296 | dağılım: {1: 10148, 0: 10148}
+[2025-12-01 10:37:04] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 20296
+[2025-12-01 10:37:18] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (20296, 180, 14), y shape: (20296,)
+[2025-12-02 01:15:59] ==== Dataset Builder (Fix) ====
+[2025-12-02 01:16:00] Yüklenen: 40 sembol, 80000 satır.
+[2025-12-02 01:16:01] Feature DF: 40 sembol, 56421 satır.
+[2025-12-02 01:16:08] Supervised ham satır sayısı: 24530 | class distribution: {0: 14045, 1: 10485}
+[2025-12-02 01:16:08] Undersample sonrası satır sayısı: 20970 | dağılım: {0: 10485, 1: 10485}
+[2025-12-02 01:16:15] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 20970
+[2025-12-02 01:16:35] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (20970, 180, 14), y shape: (20970,)
+[2025-12-02 09:24:30] ==== Dataset Builder (Fix) ====
+[2025-12-02 09:24:31] Yüklenen: 40 sembol, 80000 satır.
+[2025-12-02 09:24:32] Feature DF: 40 sembol, 56467 satır.
+[2025-12-02 09:24:37] Supervised ham satır sayısı: 24542 | class distribution: {0: 14057, 1: 10485}
+[2025-12-02 09:24:37] Undersample sonrası satır sayısı: 20970 | dağılım: {0: 10485, 1: 10485}
+[2025-12-02 09:24:43] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 20970
+[2025-12-02 09:24:58] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (20970, 180, 14), y shape: (20970,)
+[2025-12-03 00:46:51] ==== Dataset Builder (Fix) ====
+[2025-12-03 00:46:52] Yüklenen: 40 sembol, 80000 satır.
+[2025-12-03 00:46:53] Feature DF: 40 sembol, 56477 satır.
+[2025-12-03 00:46:59] Supervised ham satır sayısı: 24542 | class distribution: {0: 14057, 1: 10485}
+[2025-12-03 00:46:59] Undersample sonrası satır sayısı: 20970 | dağılım: {0: 10485, 1: 10485}
+[2025-12-03 00:47:05] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 20970
+[2025-12-03 00:47:27] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (20970, 180, 14), y shape: (20970,)
+[2025-12-03 00:47:59] ==== Dataset Builder (Fix) ====
+[2025-12-03 00:48:00] Yüklenen: 40 sembol, 80000 satır.
+[2025-12-03 00:48:00] Feature DF: 40 sembol, 56477 satır.
+[2025-12-03 00:48:07] Supervised ham satır sayısı: 24542 | class distribution: {0: 14057, 1: 10485}
+[2025-12-03 00:48:07] Undersample sonrası satır sayısı: 20970 | dağılım: {0: 10485, 1: 10485}
+[2025-12-03 00:48:12] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 20970
+[2025-12-03 00:48:29] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (20970, 180, 14), y shape: (20970,)
+[2025-12-04 01:03:29] ==== Dataset Builder (Fix) ====
+[2025-12-04 01:03:30] Yüklenen: 40 sembol, 80000 satır.
+[2025-12-04 01:03:31] Feature DF: 40 sembol, 56482 satır.
+[2025-12-04 01:03:36] Supervised ham satır sayısı: 24542 | class distribution: {0: 14057, 1: 10485}
+[2025-12-04 01:03:36] Undersample sonrası satır sayısı: 20970 | dağılım: {0: 10485, 1: 10485}
+[2025-12-04 01:03:42] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 20970
+[2025-12-04 01:03:57] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (20970, 180, 14), y shape: (20970,)
+[2025-12-04 16:45:15] ==== Dataset Builder (Fix) ====
+[2025-12-04 16:45:17] Yüklenen: 40 sembol, 80000 satır.
+[2025-12-04 16:45:17] Feature DF: 40 sembol, 56482 satır.
+[2025-12-04 16:45:24] Supervised ham satır sayısı: 24542 | class distribution: {0: 14057, 1: 10485}
+[2025-12-04 16:45:24] Undersample sonrası satır sayısı: 20970 | dağılım: {0: 10485, 1: 10485}
+[2025-12-04 16:45:30] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 20970
+[2025-12-04 16:45:46] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (20970, 180, 14), y shape: (20970,)
+[2025-12-04 21:03:07] ==== Dataset Builder (Fix) ====
+[2025-12-04 21:03:10] Yüklenen: 68 sembol, 136000 satır.
+[2025-12-04 21:03:11] Feature DF: 68 sembol, 95260 satır.
+[2025-12-04 21:03:23] Supervised ham satır sayısı: 42503 | class distribution: {0: 21485, 1: 21018}
+[2025-12-04 21:03:23] Undersample sonrası satır sayısı: 42036 | dağılım: {1: 21018, 0: 21018}
+[2025-12-04 21:03:37] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42036
+[2025-12-04 21:04:17] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42036, 180, 14), y shape: (42036,)
+[2025-12-06 05:22:17] ==== Dataset Builder (Fix) ====
+[2025-12-06 05:22:19] Yüklenen: 68 sembol, 136000 satır.
+[2025-12-06 05:22:20] Feature DF: 68 sembol, 95260 satır.
+[2025-12-06 05:22:30] Supervised ham satır sayısı: 42503 | class distribution: {0: 21485, 1: 21018}
+[2025-12-06 05:22:30] Undersample sonrası satır sayısı: 42036 | dağılım: {1: 21018, 0: 21018}
+[2025-12-06 05:22:41] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42036
+[2025-12-06 05:23:10] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42036, 180, 14), y shape: (42036,)
+[2025-12-06 17:25:07] ==== Dataset Builder (Fix) ====
+[2025-12-06 17:25:09] Yüklenen: 67 sembol, 134000 satır.
+[2025-12-06 17:25:10] Feature DF: 67 sembol, 94106 satır.
+[2025-12-06 17:25:19] Supervised ham satır sayısı: 41782 | class distribution: {0: 20969, 1: 20813}
+[2025-12-06 17:25:19] Undersample sonrası satır sayısı: 41626 | dağılım: {1: 20813, 0: 20813}
+[2025-12-06 17:25:30] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 41626
+[2025-12-06 17:25:59] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (41626, 180, 14), y shape: (41626,)
+[2025-12-08 18:44:10] ==== Dataset Builder (Fix) ====
+[2025-12-08 18:44:13] Yüklenen: 67 sembol, 134000 satır.
+[2025-12-08 18:44:14] Feature DF: 67 sembol, 94106 satır.
+[2025-12-08 18:44:26] Supervised ham satır sayısı: 41782 | class distribution: {0: 20969, 1: 20813}
+[2025-12-08 18:44:26] Undersample sonrası satır sayısı: 41626 | dağılım: {1: 20813, 0: 20813}
+[2025-12-08 18:44:41] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 41626
+[2025-12-08 18:45:16] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (41626, 180, 14), y shape: (41626,)
+[2025-12-08 22:04:33] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-08 22:04:35] Yüklenen: 68 sembol, 203000 satır.
+[2025-12-08 22:04:36] Feature DF: 68 sembol, 142661 satır işlendi.
+[2025-12-08 22:04:36] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-08 22:04:55] Supervised ham satır sayısı: 79428 | class distribution: {1: 40634, 0: 38794}
+[2025-12-08 22:04:55] Undersample sonrası satır sayısı: 77588 | dağılım: {0: 38794, 1: 38794}
+[2025-12-08 22:05:17] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 77588
+[2025-12-08 22:06:21] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (77588, 180, 14), y shape: (77588,)
+[2025-12-09 07:39:22] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-09 07:39:24] Yüklenen: 40 sembol, 119000 satır.
+[2025-12-09 07:39:24] Feature DF: 40 sembol, 84135 satır işlendi.
+[2025-12-09 07:39:24] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-09 07:39:44] Supervised ham satır sayısı: 45135 | class distribution: {0: 22790, 1: 22345}
+[2025-12-09 07:39:44] Undersample sonrası satır sayısı: 44690 | dağılım: {1: 22345, 0: 22345}
+[2025-12-09 07:40:05] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 44690
+[2025-12-09 07:41:00] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (44690, 180, 14), y shape: (44690,)
+[2025-12-09 22:24:56] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-09 22:24:58] Yüklenen: 40 sembol, 119000 satır.
+[2025-12-09 22:24:58] Feature DF: 40 sembol, 84148 satır işlendi.
+[2025-12-09 22:24:58] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-09 22:25:17] Supervised ham satır sayısı: 45135 | class distribution: {0: 22790, 1: 22345}
+[2025-12-09 22:25:17] Undersample sonrası satır sayısı: 44690 | dağılım: {1: 22345, 0: 22345}
+[2025-12-09 22:25:32] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 44690
+[2025-12-09 22:26:00] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (44690, 180, 14), y shape: (44690,)
+[2025-12-09 22:49:52] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-09 22:49:53] Yüklenen: 40 sembol, 119000 satır.
+[2025-12-09 22:49:54] Feature DF: 40 sembol, 84151 satır işlendi.
+[2025-12-09 22:49:54] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-09 22:50:03] Supervised ham satır sayısı: 45135 | class distribution: {0: 22790, 1: 22345}
+[2025-12-09 22:50:03] Undersample sonrası satır sayısı: 44690 | dağılım: {1: 22345, 0: 22345}
+[2025-12-09 22:50:14] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 44690
+[2025-12-09 22:50:52] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (44690, 180, 14), y shape: (44690,)
+[2025-12-09 23:37:32] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-09 23:37:33] Yüklenen: 40 sembol, 119000 satır.
+[2025-12-09 23:37:34] Feature DF: 40 sembol, 84156 satır işlendi.
+[2025-12-09 23:37:34] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-09 23:37:45] Supervised ham satır sayısı: 45135 | class distribution: {0: 22790, 1: 22345}
+[2025-12-09 23:37:45] Undersample sonrası satır sayısı: 44690 | dağılım: {1: 22345, 0: 22345}
+[2025-12-09 23:37:56] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 44690
+[2025-12-09 23:38:26] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (44690, 180, 14), y shape: (44690,)
+[2025-12-10 00:20:11] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-10 00:20:13] Yüklenen: 40 sembol, 119000 satır.
+[2025-12-10 00:20:13] Feature DF: 40 sembol, 84160 satır işlendi.
+[2025-12-10 00:20:13] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-10 00:20:34] Supervised ham satır sayısı: 45135 | class distribution: {0: 22790, 1: 22345}
+[2025-12-10 00:20:34] Undersample sonrası satır sayısı: 44690 | dağılım: {1: 22345, 0: 22345}
+[2025-12-10 00:20:53] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 44690
+[2025-12-10 00:21:49] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (44690, 180, 14), y shape: (44690,)
+[2025-12-10 00:30:43] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-10 00:30:44] Yüklenen: 40 sembol, 119000 satır.
+[2025-12-10 00:30:45] Feature DF: 40 sembol, 84160 satır işlendi.
+[2025-12-10 00:30:45] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-10 00:31:05] Supervised ham satır sayısı: 45135 | class distribution: {0: 22790, 1: 22345}
+[2025-12-10 00:31:05] Undersample sonrası satır sayısı: 44690 | dağılım: {1: 22345, 0: 22345}
+[2025-12-10 00:31:27] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 44690
+[2025-12-10 00:31:56] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (44690, 180, 14), y shape: (44690,)
+[2025-12-10 08:57:16] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-10 08:57:17] Yüklenen: 40 sembol, 119000 satır.
+[2025-12-10 08:57:17] Feature DF: 40 sembol, 84162 satır işlendi.
+[2025-12-10 08:57:17] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-10 08:57:28] Supervised ham satır sayısı: 45135 | class distribution: {0: 22790, 1: 22345}
+[2025-12-10 08:57:28] Undersample sonrası satır sayısı: 44690 | dağılım: {1: 22345, 0: 22345}
+[2025-12-10 08:57:39] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 44690
+[2025-12-10 08:58:09] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (44690, 180, 14), y shape: (44690,)
+[2025-12-10 13:08:26] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-10 13:08:27] Yüklenen: 40 sembol, 119000 satır.
+[2025-12-10 13:08:27] Feature DF: 40 sembol, 84183 satır işlendi.
+[2025-12-10 13:08:27] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-10 13:08:38] Supervised ham satır sayısı: 45135 | class distribution: {0: 22790, 1: 22345}
+[2025-12-10 13:08:38] Undersample sonrası satır sayısı: 44690 | dağılım: {1: 22345, 0: 22345}
+[2025-12-10 13:08:59] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 44690
+[2025-12-10 13:09:50] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (44690, 180, 14), y shape: (44690,)
+[2025-12-10 14:21:01] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-10 14:21:03] Yüklenen: 40 sembol, 119000 satır.
+[2025-12-10 14:21:03] Feature DF: 40 sembol, 84187 satır işlendi.
+[2025-12-10 14:21:03] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-10 14:21:13] Supervised ham satır sayısı: 45135 | class distribution: {0: 22790, 1: 22345}
+[2025-12-10 14:21:13] Undersample sonrası satır sayısı: 44690 | dağılım: {1: 22345, 0: 22345}
+[2025-12-10 14:21:23] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 44690
+[2025-12-10 14:21:56] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (44690, 180, 14), y shape: (44690,)
+[2025-12-11 21:05:05] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-11 21:05:06] Yüklenen: 40 sembol, 118982 satır.
+[2025-12-11 21:05:07] Feature DF: 40 sembol, 84540 satır işlendi.
+[2025-12-11 21:05:07] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-11 21:05:29] Supervised ham satır sayısı: 46411 | class distribution: {0: 23386, 1: 23025}
+[2025-12-11 21:05:29] Undersample sonrası satır sayısı: 46050 | dağılım: {1: 23025, 0: 23025}
+[2025-12-11 21:05:54] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 46050
+[2025-12-11 21:06:47] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (46050, 180, 14), y shape: (46050,)
+[2025-12-12 17:03:48] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-12 17:03:50] Yüklenen: 40 sembol, 118810 satır.
+[2025-12-12 17:03:51] Feature DF: 40 sembol, 84411 satır işlendi.
+[2025-12-12 17:03:51] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-12 17:04:04] Supervised ham satır sayısı: 46411 | class distribution: {0: 23386, 1: 23025}
+[2025-12-12 17:04:04] Undersample sonrası satır sayısı: 46050 | dağılım: {1: 23025, 0: 23025}
+[2025-12-12 17:04:21] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 46050
+[2025-12-12 17:05:02] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (46050, 180, 14), y shape: (46050,)
+[2025-12-12 17:39:31] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-12 17:39:33] Yüklenen: 40 sembol, 118810 satır.
+[2025-12-12 17:39:34] Feature DF: 40 sembol, 84411 satır işlendi.
+[2025-12-12 17:39:34] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-12 17:39:49] Supervised ham satır sayısı: 46411 | class distribution: {0: 23386, 1: 23025}
+[2025-12-12 17:39:49] Undersample sonrası satır sayısı: 46050 | dağılım: {1: 23025, 0: 23025}
+[2025-12-12 17:40:06] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 46050
+[2025-12-12 17:40:55] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (46050, 180, 14), y shape: (46050,)
+[2025-12-12 17:55:36] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-12 17:55:38] Yüklenen: 40 sembol, 118810 satır.
+[2025-12-12 17:55:39] Feature DF: 40 sembol, 84411 satır işlendi.
+[2025-12-12 17:55:39] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-12 17:55:54] Supervised ham satır sayısı: 46411 | class distribution: {0: 23386, 1: 23025}
+[2025-12-12 17:55:54] Undersample sonrası satır sayısı: 46050 | dağılım: {1: 23025, 0: 23025}
+[2025-12-12 17:56:11] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 46050
+[2025-12-12 17:56:59] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (46050, 180, 14), y shape: (46050,)
+[2025-12-12 18:45:55] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-12 18:45:56] Yüklenen: 40 sembol, 118810 satır.
+[2025-12-12 18:45:57] Feature DF: 40 sembol, 84411 satır işlendi.
+[2025-12-12 18:45:57] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-12 18:46:10] Supervised ham satır sayısı: 46411 | class distribution: {0: 23386, 1: 23025}
+[2025-12-12 18:46:10] Undersample sonrası satır sayısı: 46050 | dağılım: {1: 23025, 0: 23025}
+[2025-12-12 18:46:22] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 46050
+[2025-12-12 18:46:57] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (46050, 180, 14), y shape: (46050,)
+[2025-12-12 21:00:48] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-12 21:00:49] Yüklenen: 40 sembol, 118810 satır.
+[2025-12-12 21:00:50] Feature DF: 40 sembol, 84411 satır işlendi.
+[2025-12-12 21:00:50] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-12 21:01:08] Supervised ham satır sayısı: 46411 | class distribution: {0: 23386, 1: 23025}
+[2025-12-12 21:01:08] Undersample sonrası satır sayısı: 46050 | dağılım: {1: 23025, 0: 23025}
+[2025-12-12 21:01:31] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 46050
+[2025-12-12 21:02:29] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (46050, 180, 14), y shape: (46050,)
+[2025-12-14 13:15:46] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-14 13:15:48] Yüklenen: 68 sembol, 204000 satır.
+[2025-12-14 13:15:49] Feature DF: 68 sembol, 143063 satır işlendi.
+[2025-12-14 13:15:49] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-14 13:16:08] Supervised ham satır sayısı: 82690 | class distribution: {0: 44095, 1: 38595}
+[2025-12-14 13:16:08] Undersample sonrası satır sayısı: 77190 | dağılım: {0: 38595, 1: 38595}
+[2025-12-14 13:16:28] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 77190
+[2025-12-14 13:17:27] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (77190, 180, 14), y shape: (77190,)
+[2025-12-17 21:23:00] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-17 21:23:03] Yüklenen: 68 sembol, 204000 satır.
+[2025-12-17 21:23:05] Feature DF: 68 sembol, 143000 satır işlendi.
+[2025-12-17 21:23:05] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-17 21:23:54] Supervised ham satır sayısı: 81213 | class distribution: {0: 44589, 1: 36624}
+[2025-12-17 21:23:54] Undersample sonrası satır sayısı: 73248 | dağılım: {0: 36624, 1: 36624}
+[2025-12-17 21:25:04] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 73248
+[2025-12-17 21:28:48] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (73248, 180, 14), y shape: (73248,)
+[2025-12-17 21:28:48] Eğitim scriptleri tetikleniyor...
+[2025-12-18 18:50:55] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-18 18:50:58] Yüklenen: 68 sembol, 204000 satır.
+[2025-12-18 18:51:00] Feature DF: 68 sembol, 143000 satır işlendi.
+[2025-12-18 18:51:00] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-18 18:51:41] Supervised ham satır sayısı: 81497 | class distribution: {0: 44428, 1: 37069}
+[2025-12-18 18:51:41] Undersample sonrası satır sayısı: 74138 | dağılım: {0: 37069, 1: 37069}
+[2025-12-18 18:52:24] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 74138
+[2025-12-18 18:54:28] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (74138, 180, 14), y shape: (74138,)
+[2025-12-18 18:54:28] Eğitim scriptleri tetikleniyor...
+[2025-12-18 20:33:18] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-18 20:33:19] Yüklenen: 68 sembol, 204000 satır.
+[2025-12-18 20:33:20] Feature DF: 68 sembol, 143000 satır işlendi.
+[2025-12-18 20:33:20] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-18 20:33:40] Supervised ham satır sayısı: 81497 | class distribution: {0: 44428, 1: 37069}
+[2025-12-18 20:33:41] Undersample sonrası satır sayısı: 74138 | dağılım: {0: 37069, 1: 37069}
+[2025-12-18 20:34:27] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 74138
+[2025-12-18 20:36:40] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (74138, 180, 14), y shape: (74138,)
+[2025-12-18 21:08:46] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-18 21:08:48] Yüklenen: 68 sembol, 204000 satır.
+[2025-12-18 21:08:49] Feature DF: 68 sembol, 143000 satır işlendi.
+[2025-12-18 21:08:49] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-18 21:09:09] Supervised ham satır sayısı: 81497 | class distribution: {0: 44428, 1: 37069}
+[2025-12-18 21:09:10] Undersample sonrası satır sayısı: 74138 | dağılım: {0: 37069, 1: 37069}
+[2025-12-18 21:09:37] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 74138
+[2025-12-18 21:10:36] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (74138, 180, 14), y shape: (74138,)
+[2025-12-18 22:13:49] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-18 22:13:50] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-18 22:13:51] Feature DF: 40 sembol, 84610 satır işlendi.
+[2025-12-18 22:13:51] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-18 22:14:02] Supervised ham satır sayısı: 47788 | class distribution: {0: 27065, 1: 20723}
+[2025-12-18 22:14:02] Undersample sonrası satır sayısı: 41446 | dağılım: {0: 20723, 1: 20723}
+[2025-12-18 22:14:15] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 41446
+[2025-12-18 22:15:00] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (41446, 180, 14), y shape: (41446,)
+[2025-12-18 22:17:38] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-18 22:17:39] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-18 22:17:40] Feature DF: 40 sembol, 84610 satır işlendi.
+[2025-12-18 22:17:40] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-18 22:17:51] Supervised ham satır sayısı: 47788 | class distribution: {0: 27065, 1: 20723}
+[2025-12-18 22:17:51] Undersample sonrası satır sayısı: 41446 | dağılım: {0: 20723, 1: 20723}
+[2025-12-18 22:18:03] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 41446
+[2025-12-18 22:18:34] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (41446, 180, 14), y shape: (41446,)
+[2025-12-19 05:04:17] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-19 05:04:19] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-19 05:04:19] Feature DF: 40 sembol, 84759 satır işlendi.
+[2025-12-19 05:04:19] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-19 05:04:32] Supervised ham satır sayısı: 48397 | class distribution: {0: 27388, 1: 21009}
+[2025-12-19 05:04:32] Undersample sonrası satır sayısı: 42018 | dağılım: {0: 21009, 1: 21009}
+[2025-12-19 05:04:46] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42018
+[2025-12-19 05:05:23] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42018, 180, 14), y shape: (42018,)
+[2025-12-19 05:08:53] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-19 05:08:54] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-19 05:08:55] Feature DF: 40 sembol, 84759 satır işlendi.
+[2025-12-19 05:08:55] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-19 05:09:07] Supervised ham satır sayısı: 48397 | class distribution: {0: 27388, 1: 21009}
+[2025-12-19 05:09:07] Undersample sonrası satır sayısı: 42018 | dağılım: {0: 21009, 1: 21009}
+[2025-12-19 05:09:19] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42018
+[2025-12-19 05:09:51] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42018, 180, 14), y shape: (42018,)
+[2025-12-19 17:00:32] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-19 17:00:33] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-19 17:00:33] Feature DF: 40 sembol, 84780 satır işlendi.
+[2025-12-19 17:00:33] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-19 17:00:45] Supervised ham satır sayısı: 48483 | class distribution: {0: 27422, 1: 21061}
+[2025-12-19 17:00:45] Undersample sonrası satır sayısı: 42122 | dağılım: {0: 21061, 1: 21061}
+[2025-12-19 17:00:58] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42122
+[2025-12-19 17:01:30] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42122, 180, 14), y shape: (42122,)
+[2025-12-19 17:01:58] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-19 17:01:59] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-19 17:02:00] Feature DF: 40 sembol, 84780 satır işlendi.
+[2025-12-19 17:02:00] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-19 17:02:11] Supervised ham satır sayısı: 48483 | class distribution: {0: 27422, 1: 21061}
+[2025-12-19 17:02:11] Undersample sonrası satır sayısı: 42122 | dağılım: {0: 21061, 1: 21061}
+[2025-12-19 17:02:24] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42122
+[2025-12-19 17:02:55] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42122, 180, 14), y shape: (42122,)
+[2025-12-19 17:56:42] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-19 17:56:44] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-19 17:56:44] Feature DF: 40 sembol, 84802 satır işlendi.
+[2025-12-19 17:56:44] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-19 17:57:07] Supervised ham satır sayısı: 48566 | class distribution: {0: 27456, 1: 21110}
+[2025-12-19 17:57:07] Undersample sonrası satır sayısı: 42220 | dağılım: {0: 21110, 1: 21110}
+[2025-12-19 17:57:33] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42220
+[2025-12-19 17:58:28] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42220, 180, 14), y shape: (42220,)
+[2025-12-19 18:31:26] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-19 18:31:27] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-19 18:31:28] Feature DF: 40 sembol, 84823 satır işlendi.
+[2025-12-19 18:31:28] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-19 18:31:49] Supervised ham satır sayısı: 48639 | class distribution: {0: 27477, 1: 21162}
+[2025-12-19 18:31:49] Undersample sonrası satır sayısı: 42324 | dağılım: {0: 21162, 1: 21162}
+[2025-12-19 18:32:13] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42324
+[2025-12-19 18:33:04] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42324, 180, 14), y shape: (42324,)
+[2025-12-20 02:32:01] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-20 02:32:02] Yüklenen: 40 sembol, 119969 satır.
+[2025-12-20 02:32:03] Feature DF: 40 sembol, 84869 satır işlendi.
+[2025-12-20 02:32:03] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-20 02:32:15] Supervised ham satır sayısı: 48908 | class distribution: {0: 27608, 1: 21300}
+[2025-12-20 02:32:15] Undersample sonrası satır sayısı: 42600 | dağılım: {1: 21300, 0: 21300}
+[2025-12-20 02:32:27] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42600
+[2025-12-20 02:33:00] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42600, 180, 14), y shape: (42600,)
+[2025-12-20 14:59:26] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-20 14:59:27] Yüklenen: 40 sembol, 118709 satır.
+[2025-12-20 14:59:28] Feature DF: 40 sembol, 83844 satır işlendi.
+[2025-12-20 14:59:28] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-20 14:59:40] Supervised ham satır sayısı: 48624 | class distribution: {0: 27477, 1: 21147}
+[2025-12-20 14:59:40] Undersample sonrası satır sayısı: 42294 | dağılım: {0: 21147, 1: 21147}
+[2025-12-20 14:59:55] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42294
+[2025-12-20 15:00:29] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42294, 180, 14), y shape: (42294,)
+[2025-12-21 03:00:38] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-21 03:00:40] Yüklenen: 40 sembol, 118709 satır.
+[2025-12-21 03:00:40] Feature DF: 40 sembol, 83844 satır işlendi.
+[2025-12-21 03:00:40] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-21 03:01:26] Supervised ham satır sayısı: 48624 | class distribution: {0: 27477, 1: 21147}
+[2025-12-21 03:01:26] Undersample sonrası satır sayısı: 42294 | dağılım: {0: 21147, 1: 21147}
+[2025-12-21 03:01:39] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42294
+[2025-12-21 03:02:12] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42294, 180, 14), y shape: (42294,)
+[2025-12-22 21:41:32] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-22 21:41:33] Yüklenen: 40 sembol, 118709 satır.
+[2025-12-22 21:41:34] Feature DF: 40 sembol, 83844 satır işlendi.
+[2025-12-22 21:41:34] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-22 21:41:57] Supervised ham satır sayısı: 48624 | class distribution: {0: 27477, 1: 21147}
+[2025-12-22 21:41:57] Undersample sonrası satır sayısı: 42294 | dağılım: {0: 21147, 1: 21147}
+[2025-12-22 21:42:20] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42294
+[2025-12-22 21:43:16] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42294, 180, 14), y shape: (42294,)
+[2025-12-22 22:59:26] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-22 22:59:27] Yüklenen: 40 sembol, 118709 satır.
+[2025-12-22 22:59:28] Feature DF: 40 sembol, 83844 satır işlendi.
+[2025-12-22 22:59:28] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-22 22:59:39] Supervised ham satır sayısı: 48624 | class distribution: {0: 27477, 1: 21147}
+[2025-12-22 22:59:39] Undersample sonrası satır sayısı: 42294 | dağılım: {0: 21147, 1: 21147}
+[2025-12-22 22:59:51] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42294
+[2025-12-22 23:00:24] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42294, 180, 14), y shape: (42294,)
+[2025-12-27 22:13:34] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-27 22:13:36] Yüklenen: 40 sembol, 118541 satır.
+[2025-12-27 22:13:37] Feature DF: 40 sembol, 83676 satır işlendi.
+[2025-12-27 22:13:37] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-27 22:13:54] Supervised ham satır sayısı: 48472 | class distribution: {0: 27420, 1: 21052}
+[2025-12-27 22:13:54] Undersample sonrası satır sayısı: 42104 | dağılım: {0: 21052, 1: 21052}
+[2025-12-27 22:14:12] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42104
+[2025-12-27 22:14:53] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42104, 180, 14), y shape: (42104,)
+[2025-12-28 12:53:16] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-28 12:53:18] Yüklenen: 40 sembol, 118415 satır.
+[2025-12-28 12:53:20] Feature DF: 40 sembol, 83550 satır işlendi.
+[2025-12-28 12:53:20] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-28 12:53:42] Supervised ham satır sayısı: 48349 | class distribution: {0: 27359, 1: 20990}
+[2025-12-28 12:53:42] Undersample sonrası satır sayısı: 41980 | dağılım: {0: 20990, 1: 20990}
+[2025-12-28 12:54:03] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 41980
+[2025-12-28 12:54:57] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (41980, 180, 14), y shape: (41980,)
+[2025-12-28 13:13:04] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-28 13:13:05] Yüklenen: 40 sembol, 118373 satır.
+[2025-12-28 13:13:05] Feature DF: 40 sembol, 83508 satır işlendi.
+[2025-12-28 13:13:05] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-28 13:13:16] Supervised ham satır sayısı: 48307 | class distribution: {0: 27339, 1: 20968}
+[2025-12-28 13:13:16] Undersample sonrası satır sayısı: 41936 | dağılım: {0: 20968, 1: 20968}
+[2025-12-28 13:13:26] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 41936
+[2025-12-28 13:13:57] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (41936, 180, 14), y shape: (41936,)
+[2025-12-28 13:59:58] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-28 14:00:00] Yüklenen: 68 sembol, 204000 satır.
+[2025-12-28 14:00:01] Feature DF: 68 sembol, 143001 satır işlendi.
+[2025-12-28 14:00:01] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-28 14:00:19] Supervised ham satır sayısı: 75909 | class distribution: {1: 38874, 0: 37035}
+[2025-12-28 14:00:19] Undersample sonrası satır sayısı: 74070 | dağılım: {1: 37035, 0: 37035}
+[2025-12-28 14:00:38] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 74070
+[2025-12-28 14:01:34] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (74070, 180, 14), y shape: (74070,)
+[2025-12-28 16:22:55] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-28 16:22:56] Yüklenen: 68 sembol, 204000 satır.
+[2025-12-28 16:22:57] Feature DF: 68 sembol, 143001 satır işlendi.
+[2025-12-28 16:22:57] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-28 16:23:13] Supervised ham satır sayısı: 75909 | class distribution: {1: 38874, 0: 37035}
+[2025-12-28 16:23:13] Undersample sonrası satır sayısı: 74070 | dağılım: {1: 37035, 0: 37035}
+[2025-12-28 16:23:51] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 74070
+[2025-12-28 16:25:28] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (74070, 180, 14), y shape: (74070,)
+[2025-12-28 18:50:48] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-28 18:50:49] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-28 18:50:50] Feature DF: 40 sembol, 84644 satır işlendi.
+[2025-12-28 18:50:50] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-28 18:50:59] Supervised ham satır sayısı: 44120 | class distribution: {1: 22145, 0: 21975}
+[2025-12-28 18:50:59] Undersample sonrası satır sayısı: 43950 | dağılım: {1: 21975, 0: 21975}
+[2025-12-28 18:51:11] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 43950
+[2025-12-28 18:51:44] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (43950, 180, 14), y shape: (43950,)
+[2025-12-28 20:01:12] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-28 20:01:13] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-28 20:01:14] Feature DF: 40 sembol, 84671 satır işlendi.
+[2025-12-28 20:01:14] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-28 20:01:23] Supervised ham satır sayısı: 44242 | class distribution: {1: 22181, 0: 22061}
+[2025-12-28 20:01:23] Undersample sonrası satır sayısı: 44122 | dağılım: {0: 22061, 1: 22061}
+[2025-12-28 20:01:34] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 44122
+[2025-12-28 20:02:07] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (44122, 180, 14), y shape: (44122,)
+[2025-12-28 20:07:59] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-28 20:08:00] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-28 20:08:01] Feature DF: 40 sembol, 84677 satır işlendi.
+[2025-12-28 20:08:01] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-28 20:08:09] Supervised ham satır sayısı: 44269 | class distribution: {1: 22193, 0: 22076}
+[2025-12-28 20:08:10] Undersample sonrası satır sayısı: 44152 | dağılım: {0: 22076, 1: 22076}
+[2025-12-28 20:08:22] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 44152
+[2025-12-28 20:08:55] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (44152, 180, 14), y shape: (44152,)
+[2025-12-29 00:41:27] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-29 00:41:29] Yüklenen: 68 sembol, 204000 satır.
+[2025-12-29 00:41:32] Feature DF: 68 sembol, 143003 satır işlendi.
+[2025-12-29 00:41:32] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-29 00:42:04] Supervised ham satır sayısı: 74873 | class distribution: {0: 37921, 1: 36952}
+[2025-12-29 00:42:04] Undersample sonrası satır sayısı: 73904 | dağılım: {1: 36952, 0: 36952}
+[2025-12-29 00:42:39] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 73904
+[2025-12-29 00:44:22] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (73904, 180, 14), y shape: (73904,)
+[2025-12-29 08:45:01] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-29 08:45:03] Yüklenen: 68 sembol, 204000 satır.
+[2025-12-29 08:45:06] Feature DF: 68 sembol, 143003 satır işlendi.
+[2025-12-29 08:45:06] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-29 08:45:38] Supervised ham satır sayısı: 74873 | class distribution: {0: 37921, 1: 36952}
+[2025-12-29 08:45:39] Undersample sonrası satır sayısı: 73904 | dağılım: {1: 36952, 0: 36952}
+[2025-12-29 08:46:13] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 73904
+[2025-12-29 08:47:55] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (73904, 180, 14), y shape: (73904,)
+[2025-12-29 21:34:52] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-29 21:34:55] Yüklenen: 68 sembol, 204000 satır.
+[2025-12-29 21:34:58] Feature DF: 68 sembol, 143003 satır işlendi.
+[2025-12-29 21:34:58] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-29 21:35:37] Supervised ham satır sayısı: 74873 | class distribution: {0: 37921, 1: 36952}
+[2025-12-29 21:35:37] Undersample sonrası satır sayısı: 73904 | dağılım: {1: 36952, 0: 36952}
+[2025-12-29 21:36:15] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 73904
+[2025-12-29 21:37:13] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (73904, 180, 14), y shape: (73904,)
+[2025-12-29 22:16:56] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-29 22:16:57] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-29 22:16:58] Feature DF: 40 sembol, 84604 satır işlendi.
+[2025-12-29 22:16:58] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-29 22:17:06] Supervised ham satır sayısı: 43495 | class distribution: {0: 22549, 1: 20946}
+[2025-12-29 22:17:06] Undersample sonrası satır sayısı: 41892 | dağılım: {0: 20946, 1: 20946}
+[2025-12-29 22:17:17] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 41892
+[2025-12-29 22:17:46] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (41892, 180, 14), y shape: (41892,)
+[2025-12-30 00:31:48] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-30 00:31:50] Yüklenen: 68 sembol, 204000 satır.
+[2025-12-30 00:31:52] Feature DF: 68 sembol, 143005 satır işlendi.
+[2025-12-30 00:31:52] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-30 00:32:25] Supervised ham satır sayısı: 75210 | class distribution: {0: 38165, 1: 37045}
+[2025-12-30 00:32:26] Undersample sonrası satır sayısı: 74090 | dağılım: {0: 37045, 1: 37045}
+[2025-12-30 00:33:01] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 74090
+[2025-12-30 00:34:43] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (74090, 180, 14), y shape: (74090,)
+[2025-12-30 10:18:46] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-30 10:18:47] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-30 10:18:48] Feature DF: 40 sembol, 84839 satır işlendi.
+[2025-12-30 10:18:48] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-30 10:19:08] Supervised ham satır sayısı: 44562 | class distribution: {0: 23183, 1: 21379}
+[2025-12-30 10:19:08] Undersample sonrası satır sayısı: 42758 | dağılım: {1: 21379, 0: 21379}
+[2025-12-30 10:19:28] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42758
+[2025-12-30 10:20:21] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42758, 180, 14), y shape: (42758,)
+[2025-12-30 12:36:00] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-30 12:36:02] Yüklenen: 68 sembol, 204000 satır.
+[2025-12-30 12:36:04] Feature DF: 68 sembol, 143006 satır işlendi.
+[2025-12-30 12:36:04] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-30 12:36:36] Supervised ham satır sayısı: 74468 | class distribution: {0: 37837, 1: 36631}
+[2025-12-30 12:36:36] Undersample sonrası satır sayısı: 73262 | dağılım: {0: 36631, 1: 36631}
+[2025-12-30 12:37:12] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 73262
+[2025-12-30 12:38:54] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (73262, 180, 14), y shape: (73262,)
+[2025-12-30 22:14:20] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-30 22:14:21] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-30 22:14:22] Feature DF: 40 sembol, 84827 satır işlendi.
+[2025-12-30 22:14:22] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-30 22:14:31] Supervised ham satır sayısı: 44260 | class distribution: {0: 23190, 1: 21070}
+[2025-12-30 22:14:31] Undersample sonrası satır sayısı: 42140 | dağılım: {0: 21070, 1: 21070}
+[2025-12-30 22:14:43] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42140
+[2025-12-30 22:15:13] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42140, 180, 14), y shape: (42140,)
+[2025-12-30 23:16:47] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-30 23:16:48] Yüklenen: 40 sembol, 120000 satır.
+[2025-12-30 23:16:49] Feature DF: 40 sembol, 84859 satır işlendi.
+[2025-12-30 23:16:49] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-30 23:17:02] Supervised ham satır sayısı: 44373 | class distribution: {0: 23236, 1: 21137}
+[2025-12-30 23:17:02] Undersample sonrası satır sayısı: 42274 | dağılım: {0: 21137, 1: 21137}
+[2025-12-30 23:17:18] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 42274
+[2025-12-30 23:17:55] NPZ kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.npz | X shape: (42274, 180, 14), y shape: (42274,)
+[2025-12-31 00:42:31] ==== Dataset Builder (Smart Fallback Enabled) ====
+[2025-12-31 00:42:36] Yüklenen: 68 sembol, 204000 satır.
+[2025-12-31 00:42:41] Feature DF: 68 sembol, 143005 satır işlendi.
+[2025-12-31 00:42:41] Supervised veri hazırlanıyor. Threshold: 0.002
+[2025-12-31 00:43:38] Supervised ham satır sayısı: 73621 | class distribution: {0: 37053, 1: 36568}
+[2025-12-31 00:43:38] Undersample sonrası satır sayısı: 73136 | dağılım: {0: 36568, 1: 36568}
+[2025-12-31 00:44:29] Kaydedildi: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\data\supervised_w180_h12_g0.parquet | Satır: 73136
+[2025-12-31 00:44:56] NPZ kaydedilemedi: Unable to allocate 1.37 GiB for an array with shape (73136, 180, 14) and data type float64

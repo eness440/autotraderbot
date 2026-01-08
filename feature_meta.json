@@ -1,0 +1,24 @@
+{
+  "feature_names": [
+    "close",
+    "ret1",
+    "ret5",
+    "mom10",
+    "ma10",
+    "ma20",
+    "rsi14",
+    "atr14",
+    "boll_pct_b",
+    "vwap20_delta",
+    "volume",
+    "vol_z20",
+    "boll_width",
+    "atr14_pct"
+  ],
+  "window": 180,
+  "horizon": 12,
+  "gap": 0,
+  "change_threshold": 0.002,
+  "no_undersample": false,
+  "final_rows": 44373
+}

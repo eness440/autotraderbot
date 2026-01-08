@@ -1,0 +1,21 @@
+{
+  "asset": "MIXED",
+  "interval": "1h",
+  "metrics": {
+    "BTC": {
+      "funding_bias": 0.1669,
+      "oi_trend": -0.00188707043372552,
+      "taker_imbalance": 0.0,
+      "defi_tvl_sentiment": 0.17092710476
+    },
+    "ETH": {
+      "funding_bias": 0.2,
+      "oi_trend": -0.00038925526686146855,
+      "taker_imbalance": 0.0,
+      "eth_gas_price_gwei": 0.0,
+      "eth_gas_sentiment": 0.0,
+      "defi_tvl_sentiment": 0.17092710476
+    }
+  },
+  "updated_at": "2025-12-30T23:18:36.409566+00:00"
+}

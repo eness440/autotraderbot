@@ -1,0 +1,9 @@
+{
+  "best_params": {
+    "C": 50.0,
+    "max_iter": 200,
+    "penalty": "l2",
+    "solver": "lbfgs"
+  },
+  "best_score": 0.9652612612612612
+}

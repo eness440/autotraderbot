@@ -1,0 +1,1480 @@
+
+===== [2025-12-12T19:19:21Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2025-12-12 22:19:23.805067: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-12 22:19:26.139489: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 61, in <module>
+    from ml.rl_env import MultiCoinTradeEnv as CryptoEnv
+ModuleNotFoundError: No module named 'ml'
+
+===== [2025-12-12T19:19:29Z] END RL rc=1 timeout=False =====
+
+===== [2025-12-12T19:19:29Z] START RL-LEGACY =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train.py --timesteps 10000 --device cpu
+
+2025-12-12 22:19:31.843076: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-12 22:19:33.987240: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train.py", line 46, in <module>
+    from .rl_env import load_env_from_metrics_multi
+ImportError: attempted relative import with no known parent package
+
+===== [2025-12-12T19:19:37Z] END RL-LEGACY rc=1 timeout=False =====
+
+===== [2025-12-12T20:15:04Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2025-12-12 23:15:07.623251: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-12 23:15:14.433286: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 61, in <module>
+    from ml.rl_env import MultiCoinTradeEnv as CryptoEnv
+ModuleNotFoundError: No module named 'ml'
+
+===== [2025-12-12T20:15:23Z] END RL rc=1 timeout=False =====
+
+===== [2025-12-12T20:15:23Z] START RL-LEGACY =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train.py --timesteps 10000 --device cpu
+
+2025-12-12 23:15:25.654755: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-12 23:15:30.349019: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train.py", line 46, in <module>
+    from .rl_env import load_env_from_metrics_multi
+ImportError: attempted relative import with no known parent package
+
+===== [2025-12-12T20:15:38Z] END RL-LEGACY rc=1 timeout=False =====
+
+===== [2025-12-12T22:02:35Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2025-12-13 01:02:37.679345: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-13 01:02:42.538338: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 149, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 143, in main
+    env = load_env(args.env_config)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 99, in load_env
+    return CryptoEnv(**env_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MultiCoinTradeEnv.__init__() missing 1 required positional argument: 'full_df'
+
+===== [2025-12-12T22:02:48Z] END RL rc=1 timeout=False =====
+
+===== [2025-12-12T22:02:48Z] START RL-LEGACY =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train --timesteps 10000 --device cpu
+
+2025-12-13 01:02:50.758355: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-13 01:02:54.201335: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\utils.py:195: UserWarning: get_linear_fn() is deprecated, please use LinearSchedule() instead
+  warnings.warn("get_linear_fn() is deprecated, please use LinearSchedule() instead")
+✅ RL: 40 sembol için 296551 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+🚀 RL Eğitimi Başlatılıyor... (Toplam Coin: 40)
+✅ RL: 40 sembol için 296551 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+🔄 Mevcut model bulundu: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_multi.zip
+   Eğitim kaldığı yerden devam edecek.
+🏋️‍♂️ Eğitim döngüsü: 10,000 adım.
+--------------------------------
+| time/              |         |
+|    fps             | 478     |
+|    iterations      | 1       |
+|    time_elapsed    | 4       |
+|    total_timesteps | 5306368 |
+--------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 333         |
+|    iterations           | 2           |
+|    time_elapsed         | 12          |
+|    total_timesteps      | 5308416     |
+| train/                  |             |
+|    approx_kl            | 0.027287723 |
+|    clip_fraction        | 0.169       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.533      |
+|    explained_variance   | -0.00431    |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0119     |
+|    n_updates            | 25910       |
+|    policy_gradient_loss | 0.00994     |
+|    value_loss           | 1.68e-05    |
+-----------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 307         |
+|    iterations           | 3           |
+|    time_elapsed         | 19          |
+|    total_timesteps      | 5310464     |
+| train/                  |             |
+|    approx_kl            | 0.040844448 |
+|    clip_fraction        | 0.19        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.582      |
+|    explained_variance   | 0.000195    |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0225     |
+|    n_updates            | 25920       |
+|    policy_gradient_loss | -0.0183     |
+|    value_loss           | 7.21e-08    |
+-----------------------------------------
+----------------------------------------
+| time/                   |            |
+|    fps                  | 298        |
+|    iterations           | 4          |
+|    time_elapsed         | 27         |
+|    total_timesteps      | 5312512    |
+| train/                  |            |
+|    approx_kl            | 0.03165891 |
+|    clip_fraction        | 0.147      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.341     |
+|    explained_variance   | 0.000125   |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0263    |
+|    n_updates            | 25930      |
+|    policy_gradient_loss | -0.02      |
+|    value_loss           | 2.62e-08   |
+----------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 291          |
+|    iterations           | 5            |
+|    time_elapsed         | 35           |
+|    total_timesteps      | 5314560      |
+| train/                  |              |
+|    approx_kl            | 0.0041469573 |
+|    clip_fraction        | 0.0583       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.206       |
+|    explained_variance   | -0.103       |
+|    learning_rate        | 0.0003       |
+|    loss                 | -0.0141      |
+|    n_updates            | 25940        |
+|    policy_gradient_loss | -0.00341     |
+|    value_loss           | 3.55e-07     |
+------------------------------------------
+✅ RL Eğitimi tamamlandı ve kaydedildi -> C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_multi.zip
+[INFO] RL metrics kaydedildi -> C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\metrics\rl_metrics.json
+
+===== [2025-12-12T22:03:49Z] END RL-LEGACY rc=0 timeout=False =====
+
+===== [2025-12-13T04:57:51Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2025-12-13 07:57:58.092499: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-13 07:58:01.704512: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 149, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 143, in main
+    env = load_env(args.env_config)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 99, in load_env
+    return CryptoEnv(**env_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MultiCoinTradeEnv.__init__() missing 1 required positional argument: 'full_df'
+
+===== [2025-12-13T04:58:06Z] END RL rc=1 timeout=False =====
+
+===== [2025-12-13T04:58:06Z] START RL-LEGACY =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train --timesteps 10000 --device cpu
+
+2025-12-13 07:58:07.789222: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-13 07:58:09.769871: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\utils.py:195: UserWarning: get_linear_fn() is deprecated, please use LinearSchedule() instead
+  warnings.warn("get_linear_fn() is deprecated, please use LinearSchedule() instead")
+✅ RL: 40 sembol için 296551 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+🚀 RL Eğitimi Başlatılıyor... (Toplam Coin: 40)
+✅ RL: 40 sembol için 296551 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+🔄 Mevcut model bulundu: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_multi.zip
+   Eğitim kaldığı yerden devam edecek.
+🏋️‍♂️ Eğitim döngüsü: 10,000 adım.
+--------------------------------
+| time/              |         |
+|    fps             | 704     |
+|    iterations      | 1       |
+|    time_elapsed    | 2       |
+|    total_timesteps | 5316608 |
+--------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 562         |
+|    iterations           | 2           |
+|    time_elapsed         | 7           |
+|    total_timesteps      | 5318656     |
+| train/                  |             |
+|    approx_kl            | 0.007683123 |
+|    clip_fraction        | 0.0393      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.163      |
+|    explained_variance   | 0.232       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.0215      |
+|    n_updates            | 25960       |
+|    policy_gradient_loss | 0.000644    |
+|    value_loss           | 5.55e-05    |
+-----------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 521         |
+|    iterations           | 3           |
+|    time_elapsed         | 11          |
+|    total_timesteps      | 5320704     |
+| train/                  |             |
+|    approx_kl            | 0.004330694 |
+|    clip_fraction        | 0.0337      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.148      |
+|    explained_variance   | 0.501       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.0087      |
+|    n_updates            | 25970       |
+|    policy_gradient_loss | 0.000989    |
+|    value_loss           | 4.61e-05    |
+-----------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 508         |
+|    iterations           | 4           |
+|    time_elapsed         | 16          |
+|    total_timesteps      | 5322752     |
+| train/                  |             |
+|    approx_kl            | 0.002216156 |
+|    clip_fraction        | 0.0345      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.22       |
+|    explained_variance   | 0.533       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.00355    |
+|    n_updates            | 25980       |
+|    policy_gradient_loss | 0.00111     |
+|    value_loss           | 4.48e-06    |
+-----------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 493         |
+|    iterations           | 5           |
+|    time_elapsed         | 20          |
+|    total_timesteps      | 5324800     |
+| train/                  |             |
+|    approx_kl            | 0.013336652 |
+|    clip_fraction        | 0.0475      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.243      |
+|    explained_variance   | 0.0298      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.00115     |
+|    n_updates            | 25990       |
+|    policy_gradient_loss | 0.00228     |
+|    value_loss           | 2.03e-06    |
+-----------------------------------------
+✅ RL Eğitimi tamamlandı ve kaydedildi -> C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_multi.zip
+[INFO] RL metrics kaydedildi -> C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\metrics\rl_metrics.json
+
+===== [2025-12-13T04:58:44Z] END RL-LEGACY rc=0 timeout=False =====
+
+===== [2025-12-20T05:58:42Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2025-12-20 08:58:45.093806: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-20 08:58:47.971885: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 149, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 143, in main
+    env = load_env(args.env_config)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 99, in load_env
+    return CryptoEnv(**env_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MultiCoinTradeEnv.__init__() missing 1 required positional argument: 'full_df'
+
+===== [2025-12-20T05:58:51Z] END RL rc=1 timeout=False =====
+
+===== [2025-12-20T05:58:51Z] START RL-LEGACY =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train --timesteps 10000 --device cpu
+
+2025-12-20 08:58:54.007833: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-20 08:58:55.992301: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+✅ RL: 40 sembol için 298391 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+🚀 RL Eğitimi Başlatılıyor... (Toplam Coin: 40)
+✅ RL: 40 sembol için 298391 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+🔄 Mevcut model bulundu: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_multi.zip
+   Eğitim kaldığı yerden devam edecek.
+🏋️‍♂️ Eğitim döngüsü: 10,000 adım.
+--------------------------------
+| time/              |         |
+|    fps             | 1291    |
+|    iterations      | 1       |
+|    time_elapsed    | 1       |
+|    total_timesteps | 6207488 |
+--------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 859          |
+|    iterations           | 2            |
+|    time_elapsed         | 4            |
+|    total_timesteps      | 6209536      |
+| train/                  |              |
+|    approx_kl            | 0.0015701181 |
+|    clip_fraction        | 0.0125       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.121       |
+|    explained_variance   | -0.243       |
+|    learning_rate        | 2.53e-05     |
+|    loss                 | -0.000509    |
+|    n_updates            | 30310        |
+|    policy_gradient_loss | -0.00174     |
+|    value_loss           | 2.52e-05     |
+------------------------------------------
+-------------------------------------------
+| time/                   |               |
+|    fps                  | 753           |
+|    iterations           | 3             |
+|    time_elapsed         | 8             |
+|    total_timesteps      | 6211584       |
+| train/                  |               |
+|    approx_kl            | 0.00021639865 |
+|    clip_fraction        | 0.000684      |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -0.111        |
+|    explained_variance   | -0.0731       |
+|    learning_rate        | 2.52e-05      |
+|    loss                 | -0.00208      |
+|    n_updates            | 30320         |
+|    policy_gradient_loss | -0.00024      |
+|    value_loss           | 5.76e-06      |
+-------------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 734         |
+|    iterations           | 4           |
+|    time_elapsed         | 11          |
+|    total_timesteps      | 6213632     |
+| train/                  |             |
+|    approx_kl            | 0.002299486 |
+|    clip_fraction        | 0.00918     |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0882     |
+|    explained_variance   | -0.0993     |
+|    learning_rate        | 2.51e-05    |
+|    loss                 | -0.0047     |
+|    n_updates            | 30330       |
+|    policy_gradient_loss | -0.00276    |
+|    value_loss           | 1.4e-06     |
+-----------------------------------------
+-------------------------------------------
+| time/                   |               |
+|    fps                  | 729           |
+|    iterations           | 5             |
+|    time_elapsed         | 14            |
+|    total_timesteps      | 6215680       |
+| train/                  |               |
+|    approx_kl            | 0.00083687284 |
+|    clip_fraction        | 0.0085        |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -0.0626       |
+|    explained_variance   | -0.0797       |
+|    learning_rate        | 2.51e-05      |
+|    loss                 | -0.0193       |
+|    n_updates            | 30340         |
+|    policy_gradient_loss | -0.00194      |
+|    value_loss           | 4.56e-06      |
+-------------------------------------------
+✅ RL Eğitimi tamamlandı ve kaydedildi -> C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_multi.zip
+[INFO] RL metrics kaydedildi -> C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\metrics\rl_metrics.json
+
+===== [2025-12-20T05:59:20Z] END RL-LEGACY rc=0 timeout=False =====
+
+===== [2025-12-27T23:57:49Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2025-12-28 02:57:54.536868: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-28 02:57:58.355631: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 149, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 143, in main
+    env = load_env(args.env_config)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 99, in load_env
+    return CryptoEnv(**env_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MultiCoinTradeEnv.__init__() missing 1 required positional argument: 'full_df'
+
+===== [2025-12-27T23:58:03Z] END RL rc=1 timeout=False =====
+
+===== [2025-12-27T23:58:03Z] START RL-LEGACY =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train --timesteps 10000 --device cpu
+
+2025-12-28 02:58:08.447293: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-28 02:58:12.132750: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+✅ RL: 40 sembol için 297215 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+🚀 RL Eğitimi Başlatılıyor... (Toplam Coin: 40)
+✅ RL: 40 sembol için 297215 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+🔄 Mevcut model bulundu: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_multi.zip
+   Eğitim kaldığı yerden devam edecek.
+🏋️‍♂️ Eğitim döngüsü: 10,000 adım.
+--------------------------------
+| time/              |         |
+|    fps             | 628     |
+|    iterations      | 1       |
+|    time_elapsed    | 3       |
+|    total_timesteps | 6217728 |
+--------------------------------
+-------------------------------------------
+| time/                   |               |
+|    fps                  | 397           |
+|    iterations           | 2             |
+|    time_elapsed         | 10            |
+|    total_timesteps      | 6219776       |
+| train/                  |               |
+|    approx_kl            | 0.00042613412 |
+|    clip_fraction        | 0.00195       |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -0.0977       |
+|    explained_variance   | -0.0834       |
+|    learning_rate        | 2.53e-05      |
+|    loss                 | -0.00214      |
+|    n_updates            | 30360         |
+|    policy_gradient_loss | -0.000806     |
+|    value_loss           | 2.4e-05       |
+-------------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 354          |
+|    iterations           | 3            |
+|    time_elapsed         | 17           |
+|    total_timesteps      | 6221824      |
+| train/                  |              |
+|    approx_kl            | 0.0006063455 |
+|    clip_fraction        | 0.00659      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.123       |
+|    explained_variance   | -0.000852    |
+|    learning_rate        | 2.52e-05     |
+|    loss                 | -0.00514     |
+|    n_updates            | 30370        |
+|    policy_gradient_loss | -0.00167     |
+|    value_loss           | 7.02e-06     |
+------------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 344          |
+|    iterations           | 4            |
+|    time_elapsed         | 23           |
+|    total_timesteps      | 6223872      |
+| train/                  |              |
+|    approx_kl            | 0.0016436419 |
+|    clip_fraction        | 0.0145       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.115       |
+|    explained_variance   | 0.0447       |
+|    learning_rate        | 2.51e-05     |
+|    loss                 | 0.00609      |
+|    n_updates            | 30380        |
+|    policy_gradient_loss | -0.00248     |
+|    value_loss           | 6.57e-07     |
+------------------------------------------
+-------------------------------------------
+| time/                   |               |
+|    fps                  | 360           |
+|    iterations           | 5             |
+|    time_elapsed         | 28            |
+|    total_timesteps      | 6225920       |
+| train/                  |               |
+|    approx_kl            | 0.00021329868 |
+|    clip_fraction        | 0.000879      |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -0.0727       |
+|    explained_variance   | -0.346        |
+|    learning_rate        | 2.51e-05      |
+|    loss                 | -0.00309      |
+|    n_updates            | 30390         |
+|    policy_gradient_loss | -0.000614     |
+|    value_loss           | 2.64e-06      |
+-------------------------------------------
+✅ RL Eğitimi tamamlandı ve kaydedildi -> C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_multi.zip
+[INFO] RL metrics kaydedildi -> C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\metrics\rl_metrics.json
+
+===== [2025-12-27T23:58:58Z] END RL-LEGACY rc=0 timeout=False =====
+
+===== [2025-12-28T13:15:07Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2025-12-28 16:15:10.475068: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-28 16:15:13.146677: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorboard\compat\__init__.py", line 42, in tf
+    from tensorboard.compat import notf  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'notf' from 'tensorboard.compat' (C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorboard\compat\__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 46, in <module>
+    from stable_baselines3 import PPO, A2C, DQN  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\__init__.py", line 3, in <module>
+    from stable_baselines3.a2c import A2C
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\a2c\__init__.py", line 1, in <module>
+    from stable_baselines3.a2c.a2c import A2C
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\a2c\a2c.py", line 7, in <module>
+    from stable_baselines3.common.buffers import RolloutBuffer
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\buffers.py", line 17, in <module>
+    from stable_baselines3.common.utils import get_device
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\utils.py", line 22, in <module>
+    from torch.utils.tensorboard import SummaryWriter
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\tensorboard\__init__.py", line 12, in <module>
+    from .writer import FileWriter, SummaryWriter
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\tensorboard\writer.py", line 19, in <module>
+    from ._embedding import get_embedding_info, make_mat, make_sprite, make_tsv, write_pbtxt
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\tensorboard\_embedding.py", line 10, in <module>
+    _HAS_GFILE_JOIN = hasattr(tf.io.gfile, "join")
+                              ^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorboard\lazy.py", line 65, in __getattr__
+    return getattr(load_once(self), attr_name)
+                   ^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorboard\lazy.py", line 97, in wrapper
+    cache[arg] = f(arg)
+                 ^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorboard\lazy.py", line 50, in load_once
+    module = load_fn()
+             ^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorboard\compat\__init__.py", line 45, in tf
+    import tensorflow
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorflow\__init__.py", line 468, in <module>
+    importlib.import_module("keras.src.optimizers")
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\__init__.py", line 7, in <module>
+    from keras import _tf_keras as _tf_keras
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\_tf_keras\__init__.py", line 1, in <module>
+    from keras._tf_keras import keras
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\_tf_keras\keras\__init__.py", line 7, in <module>
+    from keras import activations as activations
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\activations\__init__.py", line 7, in <module>
+    from keras.src.activations import deserialize as deserialize
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\__init__.py", line 13, in <module>
+    from keras.src import visualization
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\visualization\__init__.py", line 2, in <module>
+    from keras.src.visualization import plot_image_gallery
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\visualization\plot_image_gallery.py", line 13, in <module>
+    import matplotlib.pyplot as plt
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\pyplot.py", line 57, in <module>
+    import matplotlib.image
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\image.py", line 25, in <module>
+    from matplotlib.backend_bases import FigureCanvasBase
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\backend_bases.py", line 49, in <module>
+    from matplotlib import (
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\widgets.py", line 21, in <module>
+    from . import (_api, _docstring, backend_tools, cbook, collections, colors,
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\collections.py", line 1578, in <module>
+    class LineCollection(Collection):
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\artist.py", line 149, in __init_subclass__
+    cls._update_set_signature_and_docstring()
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\artist.py", line 170, in _update_set_signature_and_docstring
+    for prop in ArtistInspector(cls).get_setters()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\artist.py", line 1524, in get_setters
+    or self.number_of_parameters(func) < 2
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\artist.py", line 1534, in number_of_parameters
+    return len(inspect.signature(func).parameters)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 3341, in signature
+    return Signature.from_callable(obj, follow_wrapped=follow_wrapped,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 3081, in from_callable
+    return _signature_from_callable(obj, sigcls=cls,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 2565, in _signature_from_callable
+    pass
+KeyboardInterrupt
+
+===== [2025-12-28T13:15:15Z] END RL rc=3221225786 timeout=False =====
+
+===== [2025-12-28T13:15:15Z] START RL-LEGACY =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train --timesteps 10000 --device cpu
+
+2025-12-28 16:15:18.196086: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-28 16:15:20.244684: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+
+===== [2025-12-28T13:21:43Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2025-12-28 16:21:45.280399: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-28 16:21:46.997928: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 149, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 143, in main
+    env = load_env(args.env_config)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 99, in load_env
+    return CryptoEnv(**env_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MultiCoinTradeEnv.__init__() missing 1 required positional argument: 'full_df'
+
+===== [2025-12-28T13:21:49Z] END RL rc=1 timeout=False =====
+
+===== [2025-12-28T13:21:49Z] START RL-LEGACY =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train --timesteps 10000 --device cpu
+
+2025-12-28 16:21:51.801175: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-28 16:21:53.623136: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+❌ RL: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\metrics\ohlc_history.json bulunamadı.
+
+===== [2025-12-28T13:21:56Z] END RL-LEGACY rc=1 timeout=False =====
+
+===== [2025-12-28T17:38:22Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2025-12-28 20:38:25.727642: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-28 20:38:32.038415: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 149, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 143, in main
+    env = load_env(args.env_config)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 99, in load_env
+    return CryptoEnv(**env_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MultiCoinTradeEnv.__init__() missing 1 required positional argument: 'full_df'
+
+===== [2025-12-28T17:38:40Z] END RL rc=1 timeout=False =====
+
+===== [2025-12-28T17:38:40Z] START RL-LEGACY =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train --timesteps 10000 --device cpu
+
+2025-12-28 20:38:43.617444: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-28 20:38:49.158634: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+✅ RL: 40 sembol için 299874 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+🚀 RL Eğitimi Başlatılıyor... (Toplam Coin: 40)
+✅ RL: 40 sembol için 299874 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+🔄 Mevcut model bulundu: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_multi.zip
+   Eğitim kaldığı yerden devam edecek.
+🏋️‍♂️ Eğitim döngüsü: 10,000 adım.
+--------------------------------
+| time/              |         |
+|    fps             | 455     |
+|    iterations      | 1       |
+|    time_elapsed    | 4       |
+|    total_timesteps | 7229440 |
+--------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 317          |
+|    iterations           | 2            |
+|    time_elapsed         | 12           |
+|    total_timesteps      | 7231488      |
+| train/                  |              |
+|    approx_kl            | 0.0019287036 |
+|    clip_fraction        | 0.0182       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.149       |
+|    explained_variance   | 0.0295       |
+|    learning_rate        | 2.52e-05     |
+|    loss                 | -0.0046      |
+|    n_updates            | 35300        |
+|    policy_gradient_loss | -0.00278     |
+|    value_loss           | 1.77e-05     |
+------------------------------------------
+-------------------------------------------
+| time/                   |               |
+|    fps                  | 295           |
+|    iterations           | 3             |
+|    time_elapsed         | 20            |
+|    total_timesteps      | 7233536       |
+| train/                  |               |
+|    approx_kl            | 0.00053637964 |
+|    clip_fraction        | 0.00156       |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -0.167        |
+|    explained_variance   | 0.0455        |
+|    learning_rate        | 2.52e-05      |
+|    loss                 | -0.00995      |
+|    n_updates            | 35310         |
+|    policy_gradient_loss | -0.000817     |
+|    value_loss           | 3.53e-06      |
+-------------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 290          |
+|    iterations           | 4            |
+|    time_elapsed         | 28           |
+|    total_timesteps      | 7235584      |
+| train/                  |              |
+|    approx_kl            | 0.0005907612 |
+|    clip_fraction        | 0.00903      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.113       |
+|    explained_variance   | -0.0609      |
+|    learning_rate        | 2.51e-05     |
+|    loss                 | 0.00134      |
+|    n_updates            | 35320        |
+|    policy_gradient_loss | -0.00222     |
+|    value_loss           | 3.45e-07     |
+------------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 287          |
+|    iterations           | 5            |
+|    time_elapsed         | 35           |
+|    total_timesteps      | 7237632      |
+| train/                  |              |
+|    approx_kl            | 0.0006341365 |
+|    clip_fraction        | 0.00796      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.0862      |
+|    explained_variance   | 0.157        |
+|    learning_rate        | 2.51e-05     |
+|    loss                 | 0.00583      |
+|    n_updates            | 35330        |
+|    policy_gradient_loss | -0.000841    |
+|    value_loss           | 2.26e-06     |
+------------------------------------------
+✅ RL Eğitimi tamamlandı ve kaydedildi -> C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_multi.zip
+[INFO] RL metrics kaydedildi -> C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\metrics\rl_metrics.json
+
+===== [2025-12-28T17:39:48Z] END RL-LEGACY rc=0 timeout=False =====
+
+===== [2025-12-28T19:10:28Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 33, in <module>
+    import gymnasium as gym  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\gymnasium\__init__.py", line 5, in <module>
+    from gymnasium.core import (
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\gymnasium\core.py", line 8, in <module>
+    import numpy as np
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\__init__.py", line 467, in <module>
+    from . import lib
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\lib\__init__.py", line 18, in <module>
+    from . import (
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\lib\_npyio_impl.py", line 23, in <module>
+    from . import format
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1081, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1204, in path_stats
+  File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+KeyboardInterrupt
+
+===== [2025-12-28T19:10:35Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2025-12-28 22:10:37.649950: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-28 22:10:39.466453: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 149, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 143, in main
+    env = load_env(args.env_config)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 99, in load_env
+    return CryptoEnv(**env_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MultiCoinTradeEnv.__init__() missing 1 required positional argument: 'full_df'
+
+===== [2025-12-28T19:10:42Z] END RL rc=1 timeout=False =====
+
+===== [2025-12-28T19:10:42Z] START RL-LEGACY =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train --timesteps 10000 --device cpu
+
+2025-12-28 22:10:44.451281: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-28 22:10:46.657269: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+✅ RL: 40 sembol için 299741 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+🚀 RL Eğitimi Başlatılıyor... (Toplam Coin: 40)
+✅ RL: 40 sembol için 299741 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+🔄 Mevcut model bulundu: C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_multi.zip
+   Eğitim kaldığı yerden devam edecek.
+🏋️‍♂️ Eğitim döngüsü: 10,000 adım.
+--------------------------------
+| time/              |         |
+|    fps             | 1312    |
+|    iterations      | 1       |
+|    time_elapsed    | 1       |
+|    total_timesteps | 7239680 |
+--------------------------------
+-------------------------------------------
+| time/                   |               |
+|    fps                  | 914           |
+|    iterations           | 2             |
+|    time_elapsed         | 4             |
+|    total_timesteps      | 7241728       |
+| train/                  |               |
+|    approx_kl            | 0.00026274673 |
+|    clip_fraction        | 0.00083       |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -0.107        |
+|    explained_variance   | 0.0255        |
+|    learning_rate        | 2.52e-05      |
+|    loss                 | -0.000808     |
+|    n_updates            | 35350         |
+|    policy_gradient_loss | -0.000607     |
+|    value_loss           | 1.47e-05      |
+-------------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 845          |
+|    iterations           | 3            |
+|    time_elapsed         | 7            |
+|    total_timesteps      | 7243776      |
+| train/                  |              |
+|    approx_kl            | 0.0005315684 |
+|    clip_fraction        | 0.0104       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.0923      |
+|    explained_variance   | -0.0515      |
+|    learning_rate        | 2.52e-05     |
+|    loss                 | 0.00375      |
+|    n_updates            | 35360        |
+|    policy_gradient_loss | -0.00192     |
+|    value_loss           | 2.28e-06     |
+------------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 786          |
+|    iterations           | 4            |
+|    time_elapsed         | 10           |
+|    total_timesteps      | 7245824      |
+| train/                  |              |
+|    approx_kl            | 0.0011589914 |
+|    clip_fraction        | 0.00898      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.158       |
+|    explained_variance   | 0.00927      |
+|    learning_rate        | 2.51e-05     |
+|    loss                 | -0.00727     |
+|    n_updates            | 35370        |
+|    policy_gradient_loss | -0.0021      |
+|    value_loss           | 2.55e-05     |
+------------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 781          |
+|    iterations           | 5            |
+|    time_elapsed         | 13           |
+|    total_timesteps      | 7247872      |
+| train/                  |              |
+|    approx_kl            | 0.0017745488 |
+|    clip_fraction        | 0.0129       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.18        |
+|    explained_variance   | -0.227       |
+|    learning_rate        | 2.51e-05     |
+|    loss                 | -0.003       |
+|    n_updates            | 35380        |
+|    policy_gradient_loss | -0.000851    |
+|    value_loss           | 8.81e-06     |
+------------------------------------------
+✅ RL Eğitimi tamamlandı ve kaydedildi -> C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_multi.zip
+[INFO] RL metrics kaydedildi -> C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\metrics\rl_metrics.json
+
+===== [2025-12-28T19:11:09Z] END RL-LEGACY rc=0 timeout=False =====
+
+===== [2025-12-28T20:06:59Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2025-12-28 23:07:01.953129: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-28 23:07:04.479822: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 149, in <module>
+    main()
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 143, in main
+    env = load_env(args.env_config)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 99, in load_env
+    return CryptoEnv(**env_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MultiCoinTradeEnv.__init__() missing 1 required positional argument: 'full_df'
+
+===== [2025-12-28T20:07:08Z] END RL rc=1 timeout=False =====
+
+===== [2025-12-28T20:07:08Z] START RL-LEGACY =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train --timesteps 10000 --device cpu
+
+2025-12-28 23:07:10.639705: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+
+===== [2025-12-28T20:13:36Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2025-12-28 23:13:39.209247: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-28 23:13:41.463268: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorboard\compat\__init__.py", line 42, in tf
+    from tensorboard.compat import notf  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'notf' from 'tensorboard.compat' (C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorboard\compat\__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train_advanced.py", line 46, in <module>
+    from stable_baselines3 import PPO, A2C, DQN  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\__init__.py", line 3, in <module>
+    from stable_baselines3.a2c import A2C
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\a2c\__init__.py", line 1, in <module>
+    from stable_baselines3.a2c.a2c import A2C
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\a2c\a2c.py", line 7, in <module>
+    from stable_baselines3.common.buffers import RolloutBuffer
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\buffers.py", line 17, in <module>
+    from stable_baselines3.common.utils import get_device
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\utils.py", line 22, in <module>
+    from torch.utils.tensorboard import SummaryWriter
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\tensorboard\__init__.py", line 12, in <module>
+    from .writer import FileWriter, SummaryWriter
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\tensorboard\writer.py", line 19, in <module>
+    from ._embedding import get_embedding_info, make_mat, make_sprite, make_tsv, write_pbtxt
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\tensorboard\_embedding.py", line 10, in <module>
+    _HAS_GFILE_JOIN = hasattr(tf.io.gfile, "join")
+                              ^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorboard\lazy.py", line 65, in __getattr__
+    return getattr(load_once(self), attr_name)
+                   ^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorboard\lazy.py", line 97, in wrapper
+    cache[arg] = f(arg)
+                 ^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorboard\lazy.py", line 50, in load_once
+    module = load_fn()
+             ^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorboard\compat\__init__.py", line 45, in tf
+    import tensorflow
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorflow\__init__.py", line 468, in <module>
+    importlib.import_module("keras.src.optimizers")
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\__init__.py", line 7, in <module>
+    from keras import _tf_keras as _tf_keras
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\_tf_keras\__init__.py", line 1, in <module>
+    from keras._tf_keras import keras
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\_tf_keras\keras\__init__.py", line 29, in <module>
+    from keras import wrappers as wrappers
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\wrappers\__init__.py", line 7, in <module>
+    from keras.src.wrappers.sklearn_wrapper import (
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\wrappers\__init__.py", line 1, in <module>
+    from keras.src.wrappers.sklearn_wrapper import SKLearnClassifier
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\wrappers\sklearn_wrapper.py", line 8, in <module>
+    from keras.src.wrappers.fixes import _routing_enabled
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\wrappers\fixes.py", line 2, in <module>
+    import sklearn
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\__init__.py", line 73, in <module>
+    from .base import clone  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\base.py", line 19, in <module>
+    from .utils._metadata_requests import _MetadataRequester, _routing_enabled
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\__init__.py", line 9, in <module>
+    from ._chunking import gen_batches, gen_even_slices
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\_chunking.py", line 11, in <module>
+    from ._param_validation import Interval, validate_params
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 17, in <module>
+    from .validation import _is_arraylike_not_scalar
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\validation.py", line 21, in <module>
+    from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\_array_api.py", line 20, in <module>
+    from .fixes import parse_version
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\fixes.py", line 16, in <module>
+    import scipy.stats
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\stats\__init__.py", line 626, in <module>
+    from ._stats_py import *
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\stats\_stats_py.py", line 52, in <module>
+    from . import distributions
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\stats\distributions.py", line 10, in <module>
+    from . import _continuous_distns
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\stats\_continuous_distns.py", line 193, in <module>
+    ksone = ksone_gen(a=0.0, b=1.0, name='ksone')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\stats\_distn_infrastructure.py", line 1867, in __init__
+    super().__init__(seed)
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\stats\_distn_infrastructure.py", line 687, in __init__
+    sig = _getfullargspec(self._stats)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\_lib\_util.py", line 532, in getfullargspec_no_self
+    sig = inspect.signature(func)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 3341, in signature
+    return Signature.from_callable(obj, follow_wrapped=follow_wrapped,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 3081, in from_callable
+    return _signature_from_callable(obj, sigcls=cls,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 2526, in _signature_from_callable
+    return _signature_bound_method(sig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 2130, in _signature_bound_method
+    kind = params[0].kind
+           ^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 2804, in kind
+    @property
+
+KeyboardInterrupt
+
+===== [2025-12-28T20:13:44Z] END RL rc=3221225786 timeout=False =====
+
+===== [2025-12-28T20:13:44Z] START RL-LEGACY =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train --timesteps 10000 --device cpu
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\ml\rl_train.py", line 38, in <module>
+    from stable_baselines3 import PPO  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\__init__.py", line 3, in <module>
+    from stable_baselines3.a2c import A2C
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\a2c\__init__.py", line 1, in <module>
+    from stable_baselines3.a2c.a2c import A2C
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\a2c\a2c.py", line 3, in <module>
+    import torch as th
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\__init__.py", line 2126, in <module>
+    from torch import _VF as _VF, functional as functional  # usort: skip
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\functional.py", line 8, in <module>
+    import torch.nn.functional as F
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\__init__.py", line 8, in <module>
+    from torch.nn.modules import *  # usort: skip # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eness\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\__init__.py", line 134, in <module>
+    from .pixelshuffle import PixelShuffle, PixelUnshuffle
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1322, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1262, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1528, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1502, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1601, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+KeyboardInterrupt
+
+===== [2025-12-28T20:13:45Z] END RL-LEGACY rc=3221225786 timeout=False =====
+
+===== [2026-01-07T15:24:27Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2026-01-07 18:24:33.796929: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-07 18:24:42.189469: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+INFO:ml.rl_env:RL: Coin filtresi -> önce 64, sonra 64 sembol.
+INFO:ml.rl_env:✅ RL: 40 sembol için 299512 satır hazır (window=60).
+INFO:ml.rl_env:✅ RL Env hazır: 40 sembol | window=60
+INFO:__main__:Training PPO agent for 10000 steps
+RL: Coin filtresi -> önce 64, sonra 64 sembol.
+✅ RL: 40 sembol için 299512 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+Using cpu device
+-----------------------------
+| time/              |      |
+|    fps             | 344  |
+|    iterations      | 1    |
+|    time_elapsed    | 5    |
+|    total_timesteps | 2048 |
+-----------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 225         |
+|    iterations           | 2           |
+|    time_elapsed         | 18          |
+|    total_timesteps      | 4096        |
+| train/                  |             |
+|    approx_kl            | 0.001792222 |
+|    clip_fraction        | 0.0105      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.1        |
+|    explained_variance   | -1          |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.00648    |
+|    n_updates            | 10          |
+|    policy_gradient_loss | -0.00251    |
+|    value_loss           | 0.00088     |
+-----------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 202          |
+|    iterations           | 3            |
+|    time_elapsed         | 30           |
+|    total_timesteps      | 6144         |
+| train/                  |              |
+|    approx_kl            | 0.0074800393 |
+|    clip_fraction        | 0.00513      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.1         |
+|    explained_variance   | -0.392       |
+|    learning_rate        | 0.0003       |
+|    loss                 | -0.00527     |
+|    n_updates            | 20           |
+|    policy_gradient_loss | -0.00255     |
+|    value_loss           | 7.02e-05     |
+------------------------------------------
+----------------------------------------
+| time/                   |            |
+|    fps                  | 192        |
+|    iterations           | 4          |
+|    time_elapsed         | 42         |
+|    total_timesteps      | 8192       |
+| train/                  |            |
+|    approx_kl            | 0.01001716 |
+|    clip_fraction        | 0.012      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -1.07      |
+|    explained_variance   | -0.137     |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0223    |
+|    n_updates            | 30         |
+|    policy_gradient_loss | -0.00371   |
+|    value_loss           | 0.000397   |
+----------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 188          |
+|    iterations           | 5            |
+|    time_elapsed         | 54           |
+|    total_timesteps      | 10240        |
+| train/                  |              |
+|    approx_kl            | 0.0051698117 |
+|    clip_fraction        | 0.0322       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.03        |
+|    explained_variance   | -0.606       |
+|    learning_rate        | 0.0003       |
+|    loss                 | -0.0107      |
+|    n_updates            | 40           |
+|    policy_gradient_loss | -0.00551     |
+|    value_loss           | 0.00131      |
+------------------------------------------
+INFO:__main__:Saved PPO model to C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_agent.zip
+
+===== [2026-01-07T15:26:08Z] END RL rc=0 timeout=False =====
+
+===== [2026-01-07T18:27:48Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2026-01-07 21:27:51.656206: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-07 21:27:54.647998: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+INFO:ml.rl_env:RL: Coin filtresi -> önce 64, sonra 64 sembol.
+INFO:ml.rl_env:✅ RL: 40 sembol için 299512 satır hazır (window=60).
+INFO:ml.rl_env:✅ RL Env hazır: 40 sembol | window=60
+INFO:__main__:Training PPO agent for 10000 steps
+RL: Coin filtresi -> önce 64, sonra 64 sembol.
+✅ RL: 40 sembol için 299512 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+Using cpu device
+-----------------------------
+| time/              |      |
+|    fps             | 1939 |
+|    iterations      | 1    |
+|    time_elapsed    | 1    |
+|    total_timesteps | 2048 |
+-----------------------------
+-------------------------------------------
+| time/                   |               |
+|    fps                  | 1089          |
+|    iterations           | 2             |
+|    time_elapsed         | 3             |
+|    total_timesteps      | 4096          |
+| train/                  |               |
+|    approx_kl            | 3.0108815e-05 |
+|    clip_fraction        | 0             |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -1.1          |
+|    explained_variance   | 0.0483        |
+|    learning_rate        | 0.0003        |
+|    loss                 | 0.000763      |
+|    n_updates            | 10            |
+|    policy_gradient_loss | -0.000203     |
+|    value_loss           | 0.000151      |
+-------------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 1000        |
+|    iterations           | 3           |
+|    time_elapsed         | 6           |
+|    total_timesteps      | 6144        |
+| train/                  |             |
+|    approx_kl            | 0.010641953 |
+|    clip_fraction        | 0.0234      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.09       |
+|    explained_variance   | 0.127       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0359     |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.00737    |
+|    value_loss           | 0.000251    |
+-----------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 919         |
+|    iterations           | 4           |
+|    time_elapsed         | 8           |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.007930112 |
+|    clip_fraction        | 0.0594      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.07       |
+|    explained_variance   | 0.342       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.0236      |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.00575    |
+|    value_loss           | 0.00265     |
+-----------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 908         |
+|    iterations           | 5           |
+|    time_elapsed         | 11          |
+|    total_timesteps      | 10240       |
+| train/                  |             |
+|    approx_kl            | 0.011551975 |
+|    clip_fraction        | 0.0503      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.08       |
+|    explained_variance   | 0.105       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.00655    |
+|    n_updates            | 40          |
+|    policy_gradient_loss | -0.00616    |
+|    value_loss           | 0.00079     |
+-----------------------------------------
+INFO:__main__:Saved PPO model to C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_agent.zip
+
+===== [2026-01-07T18:28:15Z] END RL rc=0 timeout=False =====
+
+===== [2026-01-08T15:38:42Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2026-01-08 18:38:53.988317: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-08 18:39:04.455578: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+INFO:ml.rl_env:RL: Coin filtresi -> önce 64, sonra 64 sembol.
+INFO:ml.rl_env:✅ RL: 40 sembol için 299512 satır hazır (window=60).
+INFO:ml.rl_env:✅ RL Env hazır: 40 sembol | window=60
+INFO:__main__:Training PPO agent for 10000 steps
+RL: Coin filtresi -> önce 64, sonra 64 sembol.
+✅ RL: 40 sembol için 299512 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+Using cpu device
+-----------------------------
+| time/              |      |
+|    fps             | 268  |
+|    iterations      | 1    |
+|    time_elapsed    | 7    |
+|    total_timesteps | 2048 |
+-----------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 178          |
+|    iterations           | 2            |
+|    time_elapsed         | 22           |
+|    total_timesteps      | 4096         |
+| train/                  |              |
+|    approx_kl            | 0.0046263305 |
+|    clip_fraction        | 0.0159       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.1         |
+|    explained_variance   | -1.2         |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.0113       |
+|    n_updates            | 10           |
+|    policy_gradient_loss | -0.0045      |
+|    value_loss           | 0.00237      |
+------------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 196         |
+|    iterations           | 3           |
+|    time_elapsed         | 31          |
+|    total_timesteps      | 6144        |
+| train/                  |             |
+|    approx_kl            | 0.011612246 |
+|    clip_fraction        | 0.0342      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.09       |
+|    explained_variance   | -0.241      |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0208     |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.00393    |
+|    value_loss           | 0.000643    |
+-----------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 214         |
+|    iterations           | 4           |
+|    time_elapsed         | 38          |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.004669129 |
+|    clip_fraction        | 4.88e-05    |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.07       |
+|    explained_variance   | -0.121      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.0219      |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.00072    |
+|    value_loss           | 0.000221    |
+-----------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 223         |
+|    iterations           | 5           |
+|    time_elapsed         | 45          |
+|    total_timesteps      | 10240       |
+| train/                  |             |
+|    approx_kl            | 0.009917492 |
+|    clip_fraction        | 0.00386     |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.08       |
+|    explained_variance   | -0.257      |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0208     |
+|    n_updates            | 40          |
+|    policy_gradient_loss | -0.003      |
+|    value_loss           | 0.000126    |
+-----------------------------------------
+INFO:__main__:Saved PPO model to C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_agent.zip
+
+===== [2026-01-08T15:40:24Z] END RL rc=0 timeout=False =====
+
+===== [2026-01-08T16:30:03Z] START RL =====
+CMD: C:\Users\eness\AppData\Local\Programs\Python\Python312\python.exe -m ml.rl_train_advanced --algo ppo --steps 10000 --model_dir C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models
+
+2026-01-08 19:30:07.312239: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-08 19:30:09.973456: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+INFO:ml.rl_env:RL: Coin filtresi -> önce 64, sonra 64 sembol.
+INFO:ml.rl_env:✅ RL: 40 sembol için 299512 satır hazır (window=60).
+INFO:ml.rl_env:✅ RL Env hazır: 40 sembol | window=60
+INFO:__main__:Training PPO agent for 10000 steps
+RL: Coin filtresi -> önce 64, sonra 64 sembol.
+✅ RL: 40 sembol için 299512 satır hazır (window=60).
+✅ RL Env hazır: 40 sembol | window=60
+Using cpu device
+-----------------------------
+| time/              |      |
+|    fps             | 1245 |
+|    iterations      | 1    |
+|    time_elapsed    | 1    |
+|    total_timesteps | 2048 |
+-----------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 734          |
+|    iterations           | 2            |
+|    time_elapsed         | 5            |
+|    total_timesteps      | 4096         |
+| train/                  |              |
+|    approx_kl            | 0.0013214067 |
+|    clip_fraction        | 0.00229      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.1         |
+|    explained_variance   | -0.0442      |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.00881      |
+|    n_updates            | 10           |
+|    policy_gradient_loss | -0.00168     |
+|    value_loss           | 0.00351      |
+------------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 640          |
+|    iterations           | 3            |
+|    time_elapsed         | 9            |
+|    total_timesteps      | 6144         |
+| train/                  |              |
+|    approx_kl            | 0.0012127713 |
+|    clip_fraction        | 0            |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.1         |
+|    explained_variance   | -0.878       |
+|    learning_rate        | 0.0003       |
+|    loss                 | -0.00111     |
+|    n_updates            | 20           |
+|    policy_gradient_loss | -0.000847    |
+|    value_loss           | 0.00114      |
+------------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 639          |
+|    iterations           | 4            |
+|    time_elapsed         | 12           |
+|    total_timesteps      | 8192         |
+| train/                  |              |
+|    approx_kl            | 0.0024261076 |
+|    clip_fraction        | 0            |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.1         |
+|    explained_variance   | -0.08        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.00367      |
+|    n_updates            | 30           |
+|    policy_gradient_loss | -0.00138     |
+|    value_loss           | 0.000172     |
+------------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 603          |
+|    iterations           | 5            |
+|    time_elapsed         | 16           |
+|    total_timesteps      | 10240        |
+| train/                  |              |
+|    approx_kl            | 0.0013790496 |
+|    clip_fraction        | 0.00654      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.1         |
+|    explained_variance   | -1.03        |
+|    learning_rate        | 0.0003       |
+|    loss                 | -0.0141      |
+|    n_updates            | 40           |
+|    policy_gradient_loss | -0.00338     |
+|    value_loss           | 0.000162     |
+------------------------------------------
+INFO:__main__:Saved PPO model to C:\Users\eness\Downloads\AutoTraderBot\AutoTraderBot\models\ppo_agent.zip
+
+===== [2026-01-08T16:30:38Z] END RL rc=0 timeout=False =====
