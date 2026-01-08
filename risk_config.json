@@ -1,0 +1,55 @@
+{
+  "atr_median_pct": 1.5,
+  "confidence_offset": 0.01,
+  "max_highly_correlated_positions": 3,
+  "tiers": [
+    {
+      "min_conf": 0.61,
+      "max_conf": 0.66,
+      "leverage": 5,
+      "wallet_pct": 0.2
+    },
+    {
+      "min_conf": 0.66,
+      "max_conf": 0.71,
+      "leverage": 10,
+      "wallet_pct": 0.25
+    },
+    {
+      "min_conf": 0.71,
+      "max_conf": 0.76,
+      "leverage": 15,
+      "wallet_pct": 0.3
+    },
+    {
+      "min_conf": 0.76,
+      "max_conf": 0.81,
+      "leverage": 25,
+      "wallet_pct": 0.35
+    },
+    {
+      "min_conf": 0.81,
+      "max_conf": 0.86,
+      "leverage": 35,
+      "wallet_pct": 0.4
+    },
+    {
+      "min_conf": 0.86,
+      "max_conf": 0.91,
+      "leverage": 45,
+      "wallet_pct": 0.5
+    },
+    {
+      "min_conf": 0.91,
+      "max_conf": 0.96,
+      "leverage": 60,
+      "wallet_pct": 0.55
+    },
+    {
+      "min_conf": 0.96,
+      "max_conf": 1.01,
+      "leverage": 70,
+      "wallet_pct": 0.6
+    }
+  ]
+}

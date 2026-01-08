@@ -1,0 +1,596 @@
+# -*- coding: utf-8 -*-
+"""
+AutoTraderBot – Streamlit Dashboard (Part 1/2)
+Dark theme, modern UI, bot kontrol, canlı özetler, log görüntüleme.
+Part 2'yi bu dosyanın en ALTINA ekleyeceksin.
+"""
+
+import os
+import io
+import time
+import json
+import math
+import glob
+import queue
+import base64
+import random
+import pathlib
+from datetime import datetime, timedelta
+
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+import streamlit as st
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Konfig / Yol ayarları
+# ──────────────────────────────────────────────────────────────────────────────
+RUNTIME_DIR = pathlib.Path("./runtime")
+RUNTIME_DIR.mkdir(exist_ok=True)
+
+# Bayrak dosyaları (state_manager ile uyumlu olacak şekilde basit yaklaşım)
+FLAG_KILL = RUNTIME_DIR / "KILL"
+FLAG_PAUSE = RUNTIME_DIR / "PAUSE"
+
+# Log dosyalarını buradan okuyalım (senin logger.py rotation adına uyumlu)
+LOG_DIR = pathlib.Path("./logs")
+LOG_DIR.mkdir(exist_ok=True)
+
+# Basit durum/metrik cache dosyaları (opsiyonel; bot yazıyorsa buradan okuruz)
+METRICS_DIR = pathlib.Path("./metrics")
+METRICS_DIR.mkdir(exist_ok=True)
+
+OKX_SNAPSHOT_FILE = METRICS_DIR / "okx_account_snapshot.json"
+AI_QUOTA_FILE      = METRICS_DIR / "ai_quota.json"
+PERF_DAILY_FILE    = METRICS_DIR / "perf_daily.json"     # {date: equity}
+PERF_WEEKLY_FILE   = METRICS_DIR / "perf_weekly.json"    # {isoweek: equity}
+OPEN_POS_FILE      = METRICS_DIR / "open_positions.json" # list of open pos
+LAST_SIGNALS_FILE  = METRICS_DIR / "signals_last.json"   # last batch decisions
+
+SETTINGS_FILE      = pathlib.Path("./settings.py")
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Sayfa/tema
+# ──────────────────────────────────────────────────────────────────────────────
+st.set_page_config(
+    page_title="AutoTraderBot • Dashboard",
+    page_icon="🧠",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+# Koyu tema + biraz neon dokunuş
+DARK_CSS = """
+<style>
+:root {
+  --bg:#0e1117;
+  --panel:#111827;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --primary:#22d3ee; /* cyan */
+  --warning:#fbbf24; /* amber */
+  --danger:#ef4444;  /* red */
+  --success:#22c55e; /* green */
+}
+html, body, .stApp { background:var(--bg) !important; color:var(--text) !important; }
+
+[data-testid="stSidebar"] > div:first-child {
+  background: linear-gradient(180deg, #0f172a 0%, #0b1220 100%);
+  border-right: 1px solid #1f2937;
+}
+.sidebar-title { font-weight:700; font-size:1rem; color:var(--primary); margin-top:.5rem; }
+.metric-box {
+  background: linear-gradient(180deg, rgba(34,211,238,.08), rgba(34,211,238,.02));
+  border:1px solid rgba(34,211,238,.2);
+  border-radius:14px; padding:14px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid #1f2937;
+  border-radius:14px; padding:16px;
+}
+.hdr { font-size:1.05rem; font-weight:700; color:#e2e8f0; margin-bottom:8px;}
+.sub { font-size:.9rem; color:var(--muted); }
+.neon { color:var(--primary); }
+.kpi { font-size:1.6rem; font-weight:800; }
+.tag { font-size:.75rem; color:#0ea5e9; background:rgba(14,165,233,.12); padding:.15rem .5rem; border-radius:999px; border:1px solid rgba(14,165,233,.25); }
+.hr { border-bottom:1px solid #1f2937; margin:.75rem 0; }
+.btn-row button { margin-right: .5rem; }
+.log-box { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,"Liberation Mono","Courier New",monospace;
+  white-space: pre-wrap; background: #0b1020; border:1px solid #1f2937; border-radius:12px; padding:12px; height: 360px; overflow:auto; }
+</style>
+"""
+st.markdown(DARK_CSS, unsafe_allow_html=True)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Yardımcı fonksiyonlar
+# ──────────────────────────────────────────────────────────────────────────────
+def safe_load_json(path: pathlib.Path, default):
+    try:
+        if path.exists():
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+    except Exception:
+        pass
+    return default
+
+def safe_save_json(path: pathlib.Path, data: dict | list):
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2, default=str)
+        return True
+    except Exception:
+        return False
+
+def tail_file(path: pathlib.Path, max_bytes: int = 200_000) -> str:
+    """Son ~200KB log'u oku (dosya yoksa boş dön)"""
+    if not path.exists():
+        return ""
+    size = path.stat().st_size
+    with open(path, "rb") as f:
+        if size > max_bytes:
+            f.seek(-max_bytes, os.SEEK_END)
+        content = f.read()
+    try:
+        return content.decode("utf-8", errors="ignore")
+    except Exception:
+        return content.decode("latin-1", errors="ignore")
+
+def list_log_files() -> list[str]:
+    files = sorted(LOG_DIR.glob("*.log*"), key=lambda p: p.stat().st_mtime, reverse=True)
+    return [f.name for f in files]
+
+def read_settings_summary() -> dict:
+    info = {"OKX_USE_TESTNET": None, "OPENAI_DECISION_MODEL": None}
+    try:
+        text = SETTINGS_FILE.read_text(encoding="utf-8")
+        for key in list(info.keys()):
+            # kaba parse: KEY = value
+            import re
+            m = re.search(rf"{key}\s*=\s*(.+)", text)
+            if m:
+                info[key] = m.group(1).strip().strip('"\'')
+    except Exception:
+        pass
+    return info
+
+def human_usd(x: float | int | None) -> str:
+    if x is None:
+        return "-"
+    try:
+        return f"${float(x):,.2f}"
+    except Exception:
+        return "-"
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Sidebar – Bot Kontrol ve Hızlı bilgiler
+# ──────────────────────────────────────────────────────────────────────────────
+with st.sidebar:
+    st.markdown('<div class="sidebar-title">AutoTraderBot</div>', unsafe_allow_html=True)
+    s = read_settings_summary()
+    env_tag = "DEMO" if str(s.get("OKX_USE_TESTNET", "True")).lower() in ("true", "1") else "LIVE"
+    st.write(f"**Env:** `{env_tag}` • **Model:** `{s.get('OPENAI_DECISION_MODEL') or 'gpt-4o-mini'}`")
+
+    st.markdown('<div class="hr"></div>', unsafe_allow_html=True)
+
+    # Bot kontrol tuşları
+    st.write("### Bot Kontrol")
+    colA, colB, colC = st.columns(3)
+    with colA:
+        if st.button("▶ Start", help="Botu çalıştır (harici süreçte). Dashboard sadece bayrakları yönetir."):
+            # Start: mevcut bayrakları kaldır (kullanıcı botu terminalden çalıştırmalı)
+            if FLAG_KILL.exists(): FLAG_KILL.unlink(missing_ok=True)
+            if FLAG_PAUSE.exists(): FLAG_PAUSE.unlink(missing_ok=True)
+            st.success("Start sinyali verildi (bayraklar temizlendi).")
+    with colB:
+        if st.button("⏸ Pause/Resume", help="PAUSE bayrağını aç/kapat"):
+            if FLAG_PAUSE.exists():
+                FLAG_PAUSE.unlink(missing_ok=True)
+                st.info("Pause kaldırıldı (Resume).")
+            else:
+                FLAG_PAUSE.write_text("1")
+                st.warning("Pause açıldı.")
+    with colC:
+        if st.button("⛔ Stop (Kill)", type="primary", help="KILL bayrağını yazar — bot güvenli kapanır."):
+            FLAG_KILL.write_text("1")
+            st.error("Stop (KILL) sinyali verildi.")
+
+    st.markdown('<div class="hr"></div>', unsafe_allow_html=True)
+
+    # Hızlı metrik kartları
+    okx = safe_load_json(OKX_SNAPSHOT_FILE, {})
+    eq = okx.get("equity_usdt")
+    mrg = okx.get("margin_ratio")
+    upnl = okx.get("unrealized_pnl")
+    st.markdown('<div class="metric-box">', unsafe_allow_html=True)
+    st.write("**Hesap Özeti**")
+    c1, c2, c3 = st.columns(3)
+    with c1: st.metric("Equity", human_usd(eq))
+    with c2: st.metric("U-PnL", human_usd(upnl))
+    with c3: st.metric("Margin Ratio", f"{mrg:.2%}" if isinstance(mrg, (int, float)) else "-")
+    st.markdown("</div>", unsafe_allow_html=True)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Üst başlık / Navbar benzeri
+# ──────────────────────────────────────────────────────────────────────────────
+st.markdown("""
+<div class="card">
+  <div style="display:flex; align-items:center; justify-content:space-between;">
+    <div>
+      <div class="hdr">🧠 AutoTraderBot — Live Dashboard</div>
+      <div class="sub">Dark theme • Async bot uyumlu • Gelişmiş metrikler ve canlı loglar</div>
+    </div>
+    <div class="tag">v3.x</div>
+  </div>
+</div>
+""", unsafe_allow_html=True)
+
+st.write("")
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Ana sekmeler
+# ──────────────────────────────────────────────────────────────────────────────
+tabs = st.tabs([
+    "📊 Overview",
+    "📈 PnL & Equity",
+    "📡 Live Signals",
+    "📋 Open Positions",
+    "🧾 Logs",
+    "🧪 Manual Trade",
+])
+
+# ──────────────────────────────────────────────────────────────────────────────
+# 1) Overview
+# ──────────────────────────────────────────────────────────────────────────────
+with tabs[0]:
+    col1, col2 = st.columns([2, 1])
+
+    # Sol: AI Quota + Son sinyaller
+    with col1:
+        st.markdown('<div class="card">', unsafe_allow_html=True)
+        st.markdown('<div class="hdr">AI Quota / Çağrı Sağlığı</div>', unsafe_allow_html=True)
+        aiq = safe_load_json(AI_QUOTA_FILE, {
+            "limit_per_min": None, "remaining": None, "err_429_rate": None,
+            "last_error": None, "last_ts": None
+        })
+        a1, a2, a3, a4 = st.columns(4)
+        a1.metric("Remaining", str(aiq.get("remaining", "-")))
+        a2.metric("Per-Min Limit", str(aiq.get("limit_per_min", "-")))
+        a3.metric("429 Rate", f"{aiq.get('err_429_rate', 0):.1%}" if aiq.get("err_429_rate") is not None else "-")
+        a4.metric("Last Error", aiq.get("last_error") or "-")
+
+        # Son sinyaller
+        st.markdown('<div class="hr"></div>', unsafe_allow_html=True)
+        st.markdown('<div class="hdr">Son Kararlar (Batch)</div>', unsafe_allow_html=True)
+        last_dec = safe_load_json(LAST_SIGNALS_FILE, {})
+        if isinstance(last_dec, dict) and last_dec:
+            df = pd.DataFrame([
+                {
+                    "Symbol": k,
+                    "Action": v.get("action"),
+                    "Master%": round(float(v.get("master_confidence", 0.0))*100, 2),
+                    "Lev": v.get("lev"),
+                    "Base": v.get("base_decision"),
+                    "Reason": v.get("reason"),
+                }
+                for k, v in last_dec.items()
+            ]).sort_values("Master%", ascending=False)
+            st.dataframe(df, use_container_width=True, height=300)
+        else:
+            st.info("Henüz sinyal dosyası bulunamadı veya boş.")
+
+        st.markdown("</div>", unsafe_allow_html=True)
+
+    # Sağ: Hızlı PnL & Drawdown mini-özet
+    with col2:
+        st.markdown('<div class="card">', unsafe_allow_html=True)
+        st.markdown('<div class="hdr">Hızlı Performans</div>', unsafe_allow_html=True)
+        perf = safe_load_json(PERF_DAILY_FILE, {})
+        if perf:
+            pdf = pd.DataFrame({
+                "date": pd.to_datetime(list(perf.keys())),
+                "equity": [float(x) for x in perf.values()]
+            }).sort_values("date")
+            eq0 = pdf["equity"].iloc[0]
+            eqN = pdf["equity"].iloc[-1]
+            pnl = eqN - eq0
+            dd = (pdf["equity"] / pdf["equity"].cummax() - 1.0).min()
+            st.metric("Toplam PnL", human_usd(pnl), delta=f"{(pnl/eq0)*100:.2f}%" if eq0 else None)
+            st.metric("Maks. Drawdown", f"{dd:.2%}")
+            fig = go.Figure()
+            fig.add_trace(go.Scatter(x=pdf["date"], y=pdf["equity"], mode="lines", name="Equity"))
+            fig.update_layout(height=220, template="plotly_dark", margin=dict(l=8,r=8,t=8,b=8))
+            st.plotly_chart(fig, use_container_width=True)
+        else:
+            st.info("Performans (günlük) verisi yok.")
+
+        st.markdown("</div>", unsafe_allow_html=True)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# 2) PnL & Equity (günlük/haftalık eğriler)
+# ──────────────────────────────────────────────────────────────────────────────
+with tabs[1]:
+    st.markdown('<div class="card">', unsafe_allow_html=True)
+    st.markdown('<div class="hdr">Equity Curves</div>', unsafe_allow_html=True)
+
+    c1, c2 = st.columns(2)
+    with c1:
+        dperf = safe_load_json(PERF_DAILY_FILE, {})
+        if dperf:
+            df = pd.DataFrame({
+                "date": pd.to_datetime(list(dperf.keys())),
+                "equity": [float(x) for x in dperf.values()]
+            }).sort_values("date")
+            fig = px.area(df, x="date", y="equity", title="Daily Equity", template="plotly_dark")
+            fig.update_layout(height=340, margin=dict(l=8,r=8,t=40,b=8))
+            st.plotly_chart(fig, use_container_width=True)
+        else:
+            st.info("Günlük equity verisi yok.")
+
+    with c2:
+        wperf = safe_load_json(PERF_WEEKLY_FILE, {})
+        if wperf:
+            wf = pd.DataFrame({
+                "week": list(wperf.keys()),
+                "equity": [float(x) for x in wperf.values()]
+            }).sort_values("week")
+            fig = px.bar(wf, x="week", y="equity", title="Weekly Equity", template="plotly_dark")
+            fig.update_layout(height=340, margin=dict(l=8,r=8,t=40,b=8))
+            st.plotly_chart(fig, use_container_width=True)
+        else:
+            st.info("Haftalık equity verisi yok.")
+
+    st.markdown("</div>", unsafe_allow_html=True)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# 3) Live Signals (son batch + eşikler)
+# ──────────────────────────────────────────────────────────────────────────────
+with tabs[2]:
+    st.markdown('<div class="card">', unsafe_allow_html=True)
+    st.markdown('<div class="hdr">Canlı Sinyaller</div>', unsafe_allow_html=True)
+
+    decs = safe_load_json(LAST_SIGNALS_FILE, {})
+    if isinstance(decs, dict) and decs:
+        df = pd.DataFrame([
+            {
+                "Symbol": k,
+                "Action": v.get("action"),
+                "Master%": round(float(v.get("master_confidence", 0.0))*100, 2),
+                "AI%": round(float(((v.get("confidence_parts") or {}).get("ai") or {}).get("score", 0.0))*100, 2) if v.get("confidence_parts") else None,
+                "TECH%": round(float(((v.get("confidence_parts") or {}).get("tech") or {}).get("score", 0.0))*100, 2) if v.get("confidence_parts") else None,
+                "SENT%": round(float(((v.get("confidence_parts") or {}).get("sent") or {}).get("score", 0.0))*100, 2) if v.get("confidence_parts") else None,
+                "Lev": v.get("lev"),
+                "Base": v.get("base_decision"),
+                "Reason": v.get("reason"),
+            } for k, v in decs.items()
+        ]).sort_values("Master%", ascending=False)
+        st.dataframe(df, use_container_width=True, height=420)
+    else:
+        st.info("Sinyal yok.")
+    st.markdown("</div>", unsafe_allow_html=True)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# 4) Open Positions
+# ──────────────────────────────────────────────────────────────────────────────
+with tabs[3]:
+    st.markdown('<div class="card">', unsafe_allow_html=True)
+    st.markdown('<div class="hdr">Açık Pozisyonlar</div>', unsafe_allow_html=True)
+    pos = safe_load_json(OPEN_POS_FILE, [])
+    if isinstance(pos, list) and pos:
+        df = pd.DataFrame(pos)
+        # beklenen sütunlar yoksa esnek davran
+        for col in ["symbol","side","size","avg_price","u_pnl","margin","lev"]:
+            if col not in df.columns:
+                df[col] = None
+        st.dataframe(
+            df[["symbol","side","size","avg_price","u_pnl","margin","lev"]],
+            use_container_width=True, height=360
+        )
+    else:
+        st.info("Açık pozisyon verisi yok.")
+    st.markdown("</div>", unsafe_allow_html=True)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# 5) Logs – son dosyayı veya seçileni göster
+# ──────────────────────────────────────────────────────────────────────────────
+with tabs[4]:
+    st.markdown('<div class="card">', unsafe_allow_html=True)
+    st.markdown('<div class="hdr">Loglar</div>', unsafe_allow_html=True)
+
+    files = list_log_files()
+    if files:
+        sel = st.selectbox("Log dosyası seç:", files, index=0)
+        content = tail_file(LOG_DIR / sel)
+        st.markdown(f"**{sel}** — son içerik:", unsafe_allow_html=True)
+        st.markdown(f'<div class="log-box">{content}</div>', unsafe_allow_html=True)
+    else:
+        st.info("Log dosyası bulunamadı.")
+
+    st.markdown("</div>", unsafe_allow_html=True)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# 6) Manual Trade (basit DRY-RUN plan yazdırıcı — Part 2’de wrapper bağlanacak)
+# ──────────────────────────────────────────────────────────────────────────────
+with tabs[5]:
+    st.markdown('<div class="card">', unsafe_allow_html=True)
+    st.markdown('<div class="hdr">Manuel Emir (Simülasyon)</div>', unsafe_allow_html=True)
+
+    with st.form("manual_trade"):
+        c1, c2, c3, c4 = st.columns(4)
+        symbol = c1.text_input("Symbol", "BTC/USDT")
+        side   = c2.selectbox("Side", ["long","short"])
+        price  = c3.number_input("Price", value=10000.0, step=0.01)
+        lev    = c4.number_input("Leverage (x)", value=10, min_value=1, max_value=75, step=1)
+
+        c5, c6 = st.columns(2)
+        size   = c5.number_input("Total Size", value=0.01, step=0.001, min_value=0.0)
+        takep  = c6.number_input("TakeProfit % (örn 2 = %2)", value=2.0, step=0.1)
+
+        submitted = st.form_submit_button("Planı Oluştur")
+        if submitted:
+            # 3 kademeli giriş
+            e1 = round(size*0.5, 6)
+            e2 = round(size*0.25, 6)
+            e3 = round(size*0.25, 6)
+            entries = [e1, e2, e3]
+            # basit TP
+            tp_price = price * (1.0 + (takep/100.0) * (1 if side == "long" else -1))
+            st.info(f"ENTRY: {entries} — TP @ {tp_price:.4f} (lev={lev}x)")
+            st.success("Bu kısım DRY-RUN. Part 2 ile safe wrapper’a bağlanacak.")
+    st.markdown("</div>", unsafe_allow_html=True)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Footer
+# ──────────────────────────────────────────────────────────────────────────────
+st.caption("© AutoTraderBot — Dark Dashboard • Part 1/2 — Part 2'yi bu dosyanın en altına ekle.")
+# ──────────────────────────────────────────────────────────────────────────────
+# Part 2 — Strategy Editor + Indicator Cards + VaR / Risk Analytics + History
+# ──────────────────────────────────────────────────────────────────────────────
+
+st.write("")
+st.markdown("---")
+st.markdown("## ⚙️ Strategy & Risk Analytics")
+
+# Tabs for extra dashboards
+tabs2 = st.tabs([
+    "🧩 Strategy Param Editor",
+    "📈 Indicators (5m / 1h / 4h)",
+    "📉 Portfolio Risk / VaR",
+    "💰 OKX Wallet History",
+])
+
+# ──────────────────────────────────────────────────────────────────────────────
+# 1) Strategy Param Editor
+# ──────────────────────────────────────────────────────────────────────────────
+with tabs2[0]:
+    st.markdown('<div class="card">', unsafe_allow_html=True)
+    st.markdown('<div class="hdr">Strateji Parametre Editörü</div>', unsafe_allow_html=True)
+
+    CONFIG_PATH = pathlib.Path("./config.json")
+    default_cfg = {
+        "ema_fast": 20, "ema_slow": 50,
+        "rsi_period": 14, "rsi_overbought": 70, "rsi_oversold": 30,
+        "atr_mult_sl": 1.5, "atr_mult_tp": 3.0,
+        "leverage_limit": 15, "confidence_threshold": 0.65,
+    }
+    cfg = safe_load_json(CONFIG_PATH, default_cfg)
+
+    with st.form("strategy_form"):
+        c1, c2, c3 = st.columns(3)
+        with c1:
+            ema_fast = st.number_input("EMA Fast", value=cfg["ema_fast"], step=1)
+            ema_slow = st.number_input("EMA Slow", value=cfg["ema_slow"], step=1)
+        with c2:
+            rsi_p = st.number_input("RSI Period", value=cfg["rsi_period"], step=1)
+            rsi_hi = st.number_input("RSI Overbought", value=cfg["rsi_overbought"], step=1)
+            rsi_lo = st.number_input("RSI Oversold", value=cfg["rsi_oversold"], step=1)
+        with c3:
+            atr_sl = st.number_input("ATR x StopLoss", value=cfg["atr_mult_sl"], step=0.1)
+            atr_tp = st.number_input("ATR x TakeProfit", value=cfg["atr_mult_tp"], step=0.1)
+            levlim = st.number_input("Max Leverage", value=cfg["leverage_limit"], step=1)
+            confthr = st.number_input("Min Confidence", value=cfg["confidence_threshold"], step=0.01)
+
+        if st.form_submit_button("💾 Kaydet ve Uygula"):
+            newcfg = dict(
+                ema_fast=ema_fast, ema_slow=ema_slow,
+                rsi_period=rsi_p, rsi_overbought=rsi_hi, rsi_oversold=rsi_lo,
+                atr_mult_sl=atr_sl, atr_mult_tp=atr_tp,
+                leverage_limit=levlim, confidence_threshold=confthr,
+            )
+            safe_save_json(CONFIG_PATH, newcfg)
+            st.success("Yeni parametreler kaydedildi. Bot bir sonraki döngüde okuyacak.")
+
+    st.markdown("</div>", unsafe_allow_html=True)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# 2) Indicators 5m/1h/4h
+# ──────────────────────────────────────────────────────────────────────────────
+with tabs2[1]:
+    st.markdown('<div class="card">', unsafe_allow_html=True)
+    st.markdown('<div class="hdr">Canlı İndikatör Kartları</div>', unsafe_allow_html=True)
+    st.caption("Kaynak: metrics/indicator_snapshot_{tf}.json")
+
+    TF_LIST = ["5m","1h","4h"]
+    tf = st.selectbox("Zaman Dilimi Seç", TF_LIST)
+    ind_file = METRICS_DIR / f"indicator_snapshot_{tf}.json"
+    ind = safe_load_json(ind_file, {})
+
+    if isinstance(ind, dict) and ind:
+        df = pd.DataFrame(ind).T
+        st.dataframe(df, use_container_width=True, height=400)
+        st.caption("Her sembol için teknik göstergelerin son değerleri.")
+    else:
+        st.info(f"{tf} göstergeleri bulunamadı.")
+
+    st.markdown("</div>", unsafe_allow_html=True)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# 3) Portfolio Risk / VaR
+# ──────────────────────────────────────────────────────────────────────────────
+with tabs2[2]:
+    st.markdown('<div class="card">', unsafe_allow_html=True)
+    st.markdown('<div class="hdr">Portföy Risk & VaR Analizi</div>', unsafe_allow_html=True)
+    eq_data = safe_load_json(PERF_DAILY_FILE, {})
+    if eq_data:
+        eq_df = pd.DataFrame({
+            "date": pd.to_datetime(list(eq_data.keys())),
+            "equity": [float(v) for v in eq_data.values()]
+        }).sort_values("date")
+        eq_df["ret"] = eq_df["equity"].pct_change()
+        mean_ret = eq_df["ret"].mean()
+        vol = eq_df["ret"].std()
+        var_99 = mean_ret - 2.33*vol
+        cVaR = eq_df["ret"][eq_df["ret"] <= var_99].mean() if not eq_df["ret"].isna().all() else None
+
+        c1, c2, c3 = st.columns(3)
+        c1.metric("Ortalama Günlük Getiri", f"{mean_ret*100:.2f}%")
+        c2.metric("Volatilite", f"{vol*100:.2f}%")
+        c3.metric("99% VaR", f"{var_99*100:.2f}%")
+
+        st.caption(f"Conditional VaR (Expected Shortfall): {cVaR*100:.2f}%" if cVaR else "")
+
+        # Grafikler
+        fig1 = go.Figure()
+        fig1.add_trace(go.Scatter(x=eq_df["date"], y=eq_df["ret"], mode="lines", name="Return"))
+        fig1.update_layout(template="plotly_dark", height=280, margin=dict(l=8,r=8,t=30,b=8))
+        st.plotly_chart(fig1, use_container_width=True)
+
+        fig2 = px.histogram(eq_df, x="ret", nbins=40, title="Return Distribution", template="plotly_dark")
+        fig2.update_layout(height=280, margin=dict(l=8,r=8,t=40,b=8))
+        st.plotly_chart(fig2, use_container_width=True)
+    else:
+        st.info("Günlük equity verisi bulunamadı. VaR hesaplanamadı.")
+
+    st.markdown("</div>", unsafe_allow_html=True)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# 4) OKX Wallet History
+# ──────────────────────────────────────────────────────────────────────────────
+with tabs2[3]:
+    st.markdown('<div class="card">', unsafe_allow_html=True)
+    st.markdown('<div class="hdr">OKX Cüzdan Geçmişi</div>', unsafe_allow_html=True)
+    WALLET_FILE = METRICS_DIR / "okx_wallet_history.json"
+    hist = safe_load_json(WALLET_FILE, [])
+    if isinstance(hist, list) and hist:
+        df = pd.DataFrame(hist)
+        for c in ["ts","balance","pnl"]:
+            if c in df.columns and c != "ts":
+                df[c] = pd.to_numeric(df[c], errors="coerce")
+        if "ts" in df.columns:
+            df["ts"] = pd.to_datetime(df["ts"])
+            df = df.sort_values("ts")
+
+        st.dataframe(df.tail(100), use_container_width=True, height=350)
+        if "balance" in df.columns:
+            fig = px.line(df, x="ts", y="balance", title="Balance History", template="plotly_dark")
+            fig.update_layout(height=280, margin=dict(l=8,r=8,t=40,b=8))
+            st.plotly_chart(fig, use_container_width=True)
+    else:
+        st.info("Cüzdan geçmişi bulunamadı veya boş.")
+
+    st.markdown("</div>", unsafe_allow_html=True)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# THE END
+# ──────────────────────────────────────────────────────────────────────────────
+st.caption("© AutoTraderBot — Dashboard Extended (Part 2/2). Tüm veriler yerel metrics klasöründen okunur.")

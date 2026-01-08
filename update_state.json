@@ -1,0 +1,23 @@
+{
+  "last": {
+    "data_update": "2026-01-08T15:47:01Z",
+    "weight_patch": "2026-01-08T15:47:01Z",
+    "train_bilstm": "2026-01-08T16:30:03Z",
+    "train_rl": "2026-01-08T16:30:38Z",
+    "risk": "2026-01-08T15:47:07Z",
+    "update_sentiment": "2026-01-08T15:47:25Z",
+    "update_onchain": "2026-01-08T15:47:33Z",
+    "model_monitor": "2026-01-08T15:47:33Z",
+    "param_optimize": "2026-01-08T15:47:33Z",
+    "update_macro": "2026-01-08T15:47:34Z",
+    "update_external": "2026-01-08T15:48:09Z",
+    "train_transformer": "2026-01-08T15:48:09Z",
+    "update_social_trends": "2026-01-08T15:48:09Z",
+    "performance_analysis": "2026-01-08T16:30:38Z",
+    "update_liquidation": "2026-01-08T16:30:39Z",
+    "update_ops": "2026-01-08T16:30:39Z",
+    "update_whale": "2026-01-08T16:30:39Z",
+    "hyperparameter_search": "2025-12-28T20:13:49Z",
+    "risk_optimize": "2026-01-08T16:30:40Z"
+  }
+}

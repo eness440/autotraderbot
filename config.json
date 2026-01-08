@@ -1,0 +1,132 @@
+{
+  "auto_refresh_sec": 30,
+  "theme": "dark",
+  "ai_mode": "hybrid",
+  "openai_model": "gpt-4o-mini",
+  "deepseek_model": "deepseek-chat",
+  "max_ai_confidence": 0.85,
+  "hybrid_weights": {
+    "deepseek": 0.45,
+    "chatgpt": 0.4,
+    "bilstm": 0.075,
+    "ppo_rl": 0.075
+  },
+  "decision_weights": {
+    "ai": 0.45,
+    "tech": 0.45,
+    "sent": 0.1
+  },
+  "risk": {
+    "max_leverage": 25,
+    "max_position_pct": 0.1,
+    "max_portfolio_risk_pct": 0.05,
+    "max_drawdown_alert": 0.15,
+    "margin_ratio_warn": 0.5,
+    "daily_loss_limit_pct": 0.05,
+    "api_429_rate_warn": 0.05
+  },
+  "circuit_breaker": {
+    "error_threshold": 5,
+    "anomaly_threshold": 5,
+    "cooldown_seconds": 900,
+    "large_loss_threshold": -0.05
+  },
+  "kill_switch": {
+    "reduce_threshold": -0.03,
+    "halt_threshold": -0.05,
+    "stop_threshold": -0.07,
+    "ma_window": 20,
+    "ma_drawdown_pct": 0.03
+  },
+  "trading": {
+    "min_confidence_threshold": 0.7,
+    "default_timeframe": "15m",
+    "max_open_positions": 5,
+    "cooldown_minutes": 30,
+    "enable_shorts": true,
+    "enable_dca": false
+  },
+  "calibration": {
+    "a": 3.0,
+    "b": 0.0
+  },
+  "token_cost_per_1k": {
+    "gpt-4o-mini": 0.00038,
+    "gpt-4o": 0.01,
+    "deepseek-chat": 0.00027,
+    "deepseek-reasoner": 0.001
+  },
+  "notifications": {
+    "telegram_enabled": false,
+    "discord_enabled": false,
+    "email_enabled": false,
+    "telegram_chat_id": "",
+    "discord_webhook": ""
+  },
+  "_version": "7.0",
+  "_updated": "2025-12-31",
+  "_changelog": [
+    "v7.0: Complete configuration with all bot parameters",
+    "v6.5: Added circuit_breaker config",
+    "v6.0: Added kill_switch thresholds",
+    "v5.0: Added hybrid_weights",
+    "v4.0: Initial release"
+  ],
+  "apply_decision_weight_scaling": false,
+  "disable_rl_master_fusion": true,
+  "risk_config": {
+    "atr_median_pct": 1.5,
+    "confidence_offset": 0.01,
+    "max_highly_correlated_positions": 3,
+    "tiers": [
+      {
+        "min_conf": 0.61,
+        "max_conf": 0.66,
+        "leverage": 5,
+        "wallet_pct": 0.2
+      },
+      {
+        "min_conf": 0.66,
+        "max_conf": 0.71,
+        "leverage": 10,
+        "wallet_pct": 0.25
+      },
+      {
+        "min_conf": 0.71,
+        "max_conf": 0.76,
+        "leverage": 15,
+        "wallet_pct": 0.3
+      },
+      {
+        "min_conf": 0.76,
+        "max_conf": 0.81,
+        "leverage": 25,
+        "wallet_pct": 0.35
+      },
+      {
+        "min_conf": 0.81,
+        "max_conf": 0.86,
+        "leverage": 35,
+        "wallet_pct": 0.4
+      },
+      {
+        "min_conf": 0.86,
+        "max_conf": 0.91,
+        "leverage": 45,
+        "wallet_pct": 0.5
+      },
+      {
+        "min_conf": 0.91,
+        "max_conf": 0.96,
+        "leverage": 60,
+        "wallet_pct": 0.55
+      },
+      {
+        "min_conf": 0.96,
+        "max_conf": 1.01,
+        "leverage": 70,
+        "wallet_pct": 0.6
+      }
+    ]
+  }
+}
