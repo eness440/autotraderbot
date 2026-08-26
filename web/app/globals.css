@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --color-background: var(--bg-0);
+  --color-foreground: var(--text-100);
+}
+
+:root {
+  --bg-0: #050807;
+  --bg-100: #080d0c;
+  --bg-200: #0c1211;
+  --bg-300: #101817;
+  --text-100: #f0f7f4;
+  --text-200: #c8d6d1;
+  --text-300: #91a39d;
+  --text-400: #62736d;
+  --mint: #b8ffe8;
+  --cyan: #7fe8ff;
+  --violet: #c7b8ff;
+  --green: #9cffbd;
+  --amber: #ffd48a;
+  --red: #ff8f9d;
+  --radius: 0.75rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg-0);
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(78, 216, 190, 0.08), transparent 28%),
+    radial-gradient(circle at 82% 32%, rgba(113, 105, 255, 0.06), transparent 28%),
+    var(--bg-0);
+  color: var(--text-100);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(184, 255, 232, 0.25);
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseHalo {
+  0%, 100% { opacity: 0.35; transform: scale(0.98); }
+  50% { opacity: 0.7; transform: scale(1.03); }
+}
+
+.animate-fade-slide-in-1 { animation: fadeSlideIn 700ms 80ms both; }
+.animate-fade-slide-in-2 { animation: fadeSlideIn 700ms 160ms both; }
+.animate-fade-slide-in-3 { animation: fadeSlideIn 700ms 240ms both; }
+.animate-fade-slide-in-4 { animation: fadeSlideIn 700ms 320ms both; }
+
+.proculus-grid {
+  background-image:
+    linear-gradient(rgba(184, 255, 232, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184, 255, 232, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.liquid-halo {
+  animation: pulseHalo 7s ease-in-out infinite;
+  filter: blur(24px);
+}
